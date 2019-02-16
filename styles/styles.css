@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Indie Flower', cursive;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8rem 1rem 0;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: left 0s 0.75s;
+}
+
+.slide-one {
+  background-image: url("../images/IMG_0194-min.jpg");
+}
+
+.slide-two {
+  background-image: url("../images/IMG_0195-min.jpg");
+}
+
+.slide-three {
+  background-image: url("../images/IMG_0190-min.jpg");
+}
+
+[id^="slide"]:checked + .slide {
+  left:0;
+  z-index: 100;
+  transition: left .065s ease-out;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+}
+
+header label {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 4.25rem;
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+
+header label:hover {
+    transform: scale(1.15);
+}
+
+/*header label:checked {
+    text-decoration: underline;
+}*/
+
+.future-bio {
+  background-color: rgba(26, 139, 237, 0.5);
+}
+
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#me {
+  width: 35%;
+  min-width: 300px;
+  border-radius: 100%;
+  float: right;
+  /*position:absolute;
+  bottom: 150px;
+  right: 55px;*/
+  border: 5px solid #FFF;
+}
