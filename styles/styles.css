@@ -28,6 +28,7 @@ html, body {
   background-position: 50% 50%;
   background-size: cover;
   transition: left 0s 0.75s;
+  text-align: center;
 }
 
 .slide-one {
@@ -68,12 +69,14 @@ header label:hover {
     transform: scale(1.15);
 }
 
-/*header label:checked {
-    text-decoration: underline;
-}*/
+
 
 .future-bio {
   background-color: rgba(26, 139, 237, 0.5);
+  position: relative;
+  display: inline-block;
+  bottom: 60px;
+  width: 90%;
 }
 
 
@@ -84,11 +87,15 @@ h1 {
 
 #me {
   width: 35%;
-  min-width: 300px;
   border-radius: 100%;
   float: right;
-  /*position:absolute;
-  bottom: 150px;
-  right: 55px;*/
+  margin-right: 20px;
+  margin-bottom: 20px;
   border: 5px solid #FFF;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
