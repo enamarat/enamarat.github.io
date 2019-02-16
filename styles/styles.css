@@ -31,15 +31,15 @@ html, body {
 }
 
 .slide-one {
-  background-image: url("https://github.com/enamarat/enamarat.github.io/blob/master/public/IMG_0194-min.JPG");
+  background-image: url("https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/IMG_0194-min.JPG");
 }
 
 .slide-two {
-  background-image: url("https://github.com/enamarat/enamarat.github.io/blob/master/public/IMG_0195-min.JPG");
+  background-image: url("https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/IMG_0195-min.JPG");
 }
 
 .slide-three {
-  background-image: url("https://github.com/enamarat/enamarat.github.io/blob/master/public/IMG_0190-min.JPG");
+  background-image: url("https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/IMG_0190-min.JPG");
 }
 
 [id^="slide"]:checked + .slide {
