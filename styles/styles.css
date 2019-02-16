@@ -31,15 +31,15 @@ html, body {
 }
 
 .slide-one {
-  background-image: url("../images/IMG_0194-min.jpg");
+  background-image: url("../public/IMG_0194-min.jpg");
 }
 
 .slide-two {
-  background-image: url("../images/IMG_0195-min.jpg");
+  background-image: url("../public/IMG_0195-min.jpg");
 }
 
 .slide-three {
-  background-image: url("../images/IMG_0190-min.jpg");
+  background-image: url("../public/IMG_0190-min.jpg");
 }
 
 [id^="slide"]:checked + .slide {
