@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -8,28 +12,27 @@ html, body {
   font-weight: bold;
 }
 
-.wrap {
+/*.wrap {
   height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
   text-align: center;
-  font-size: 2.5rem;
-}
+}*/
 
-.slide {
+/*.slide {
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
-  left: 100%;
+  left:100%;
   z-index: 10;
   padding: 8rem 1rem 0;
   background-position: 50% 50%;
   background-size: cover;
   transition: left 0s 0.75s;
   text-align: center;
-}
+}*/
 
 .slide-one {
   background-image: url("https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/IMG_0194-min.JPG");
@@ -53,7 +56,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 900;
+  z-index:101;
   width: 100%;
 }
 
@@ -69,33 +72,122 @@ header label:hover {
     transform: scale(1.15);
 }
 
+/******************************************************/
+@media only screen and (min-width: 440px) {
+ .wrap {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   text-align: center;
+   font-size: 2rem;
+   overflow: hidden;
+ }
 
 
-.future-bio {
-  background-color: rgba(26, 139, 237, 0.5);
-  position: relative;
-  display: inline-block;
-  bottom: 60px;
-  width: 90%;
+ .slide {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left:100%;
+   z-index: 10;
+   padding: 8rem 1rem 0;
+   background-position: 50% 50%;
+   background-size: cover;
+   transition: left 0s 0.75s;
+   text-align: center;
+ }
+
+ header label {
+   margin-top: 1rem;
+ }
+
+ .bio {
+   padding-top: 2rem;
+   background-color: rgba(26, 139, 237, 0.5);
+   position: absolute;
+   width: 90%;
+   top:10%;
+   left: 5%;
+ }
+
+ h1 {
+   font-size: 2.5rem;
+   margin: 0 auto;
+   margin-bottom: 1rem;
+ }
+
+ h2 {
+   font-size: 2.2rem;
+   margin: 0 auto;
+   margin-top: 1rem;
+   text-decoration: underline;
+ }
+
+ p {
+     margin-right: 1rem;
+     margin-left: 1rem;
+ }
+
+ .bio p {
+   font-size: 1.8rem;
+ }
+
+ #me {
+   width: 60%;
+   margin-right: 10px;
+   margin-left: 20px;
+   border: 5px solid #FFF;
+ }
+
+ .tablet {
+   visibility: hidden;
+ }
 }
+/******************************************/
+@media only screen and (min-width: 768px) {
+ .wrap {
+   font-size: 2.5rem;
+   overflow: hidden;
+ }
 
+  .bio {
+    width: 90%;
+  }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  header label {
+    margin-top: 0rem;
+  }
+
+  #me {
+    float: right;
+    width: 45%;
+    margin-right: 10px;
+    margin-left: 20px;
+    border: 5px solid #FFF;
+  }
+
+  .tablet {
+    visibility: visible;
+  }
 }
+/******************************************/
+@media only screen and (min-width: 1024px) {
+  .wrap {
 
-#me {
-  width: 35%;
-  border-radius: 100%;
-  float: right;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  border: 5px solid #FFF;
-}
+    font-size: 2.5rem;
+  }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+  }
+
+  .tablet {
+    visibility: visible;
+  }
+
 }
