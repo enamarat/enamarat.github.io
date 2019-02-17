@@ -12,27 +12,6 @@ html, body {
   font-weight: bold;
 }
 
-/*.wrap {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-}*/
-
-/*.slide {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left:100%;
-  z-index: 10;
-  padding: 8rem 1rem 0;
-  background-position: 50% 50%;
-  background-size: cover;
-  transition: left 0s 0.75s;
-  text-align: center;
-}*/
 
 .slide-one {
   background-image: url("https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/IMG_0194-min.JPG");
@@ -73,7 +52,7 @@ header label:hover {
 }
 
 /******************************************************/
-@media only screen and (min-width: 440px) {
+@media only screen and (min-width: 320px) {
  .wrap {
    height: 100%;
    width: 100%;
@@ -82,7 +61,6 @@ header label:hover {
    font-size: 2rem;
    overflow: hidden;
  }
-
 
  .slide {
    height: 100%;
@@ -145,7 +123,7 @@ header label:hover {
  }
 }
 /******************************************/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px)  {
  .wrap {
    font-size: 2.5rem;
    overflow: hidden;
@@ -174,7 +152,6 @@ header label:hover {
 /******************************************/
 @media only screen and (min-width: 1024px) {
   .wrap {
-
     font-size: 2.5rem;
   }
 
@@ -189,5 +166,8 @@ header label:hover {
   .tablet {
     visibility: visible;
   }
+}
+/**********************************************/
+@media only screen and (min-width: 440px) and (orientation:portrait) {
 
 }
