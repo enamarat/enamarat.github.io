@@ -52,7 +52,7 @@ header label:hover {
 }
 
 /******************************************************/
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 480px) {
  .wrap {
    height: 100%;
    width: 100%;
@@ -194,7 +194,7 @@ header label:hover {
  }
 
  header label {
-   font-size: 2.3rem;
+   font-size: 2.1rem;
    margin-top: 1rem;
    color: rgba(0, 0, 0, 1);
  }
