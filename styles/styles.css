@@ -175,7 +175,7 @@ header label:hover {
    width: 100%;
    position: relative;
    text-align: center;
-   font-size: 2rem;
+   font-size: 1.9rem;
    overflow: hidden;
  }
 
@@ -194,7 +194,7 @@ header label:hover {
  }
 
  header label {
-   font-size: 2.1rem;
+   font-size: 1.9rem;
    margin-top: 1rem;
    color: rgba(0, 0, 0, 1);
  }
