@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
   <head>
     <meta charset="utf-8">
@@ -18,28 +18,96 @@
       <input id="slide-1" type="radio" name="slides" checked="true">
       <section class="slide slide-one">
         <h1> Welcome to my website! </h1>
+        <div class="greeting">
         <p> I salute you, wanderer! No matter who you are, you may always feel at home here.
         I wish you well. Stay as long as you desire. </p>
         <br>
         <p> Wherever your road will take you,  let the warm light  of love, friendship and joy accompany you on your life journey. Let hope guide you through the lands of shadows, if you happen to get lost. </p>
+        </div>
       </section>
+
       <input id="slide-2" type="radio" name="slides">
       <section class="slide slide-two">
-        <h1> Works of art </h1>
-        <p> Nothing here yet, but soon enough this page will be filled
-            with astonishing masterpieces of digital craftmanship! </p>
+        <div class="general">
+          <h1> Works of art </h1>
+          <p> Behold the astonishing samples of digital craftmanship! </p>
+
+          <div class="gallery">
+
+            <div class="portfolio-item">
+              <div class="image">
+                <a href="https://enamarat.github.io/techdegree-project-1/"><img class="portfolio-image" src="./public/rsz_project1-1.jpg"/></a>
+                <a href="https://enamarat.github.io/techdegree-project-1/"><div class="opposite-side" id="project-1">
+                  <img src="./public/rsz_project1-2.jpg"/ class="image-opposite">
+                  <h4>Random Quote Generator</h4>
+                </div></a>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="image">
+                <a href="https://enamarat.github.io/techdegree-project-2/"><img class="portfolio-image" src="./public/rsz_project2-1.jpg"/></a>
+                <a href="https://enamarat.github.io/techdegree-project-2/"><div class="opposite-side">
+                  <img src="./public/rsz_project2-2.jpg"/ class="image-opposite">
+                  <h4>Pagination And Content Filter</h4>
+                </div></a>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="image">
+                <a href="https://enamarat.github.io/techdegree-project-3/"><img class="portfolio-image" src="./public/rsz_project3-1.jpg"/></a>
+                <a href="https://enamarat.github.io/techdegree-project-3/"><div class="opposite-side">
+                  <img src="./public/rsz_project3-2.jpg"/ class="image-opposite">
+                  <h4> An Interactive Web Form </h4>
+                </div></a>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="image">
+                <a href="https://enamarat.github.io/techdegree-project-4/"><img class="portfolio-image" src="./public/rsz_project4-1.jpg"/></a>
+                <a href="https://enamarat.github.io/techdegree-project-4/"> <div class="opposite-side">
+                  <img src="./public/rsz_project4-2.jpg"/ class="image-opposite">
+                  <h4>Object Oriented Programming Game</h4>
+                </div> </a>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="image">
+                <a href="https://enamarat.github.io/techdegree-project-5/"><img class="portfolio-image" src="./public/rsz_project5-1.jpg"/></a>
+                <a href="https://enamarat.github.io/techdegree-project-5/"><div class="opposite-side">
+                  <img src="./public/rsz_project5-2.jpg"/ class="image-opposite">
+                  <h4>A Use Of Public API To Create An Employee Directory</h4>
+                </div></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </section>
+
       <input id="slide-3" type="radio" name="slides">
       <section class="slide slide-three">
         <div class="bio">
           <h1> Not history , but vision of the future </h1>
-          <img id="me" src="https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/IMG_0192-min.JPG"/>
-          <p> My name is Marat Enaliev, and I live in Moscow, Russia. I am an aspiring web developer.
-          Primarily I concetrate my efforts on studying JavaScript. My dream is to become an outstanding professional in my field one day. </p>
-          <br>
-          <p class="tablet"> I like cycling and roaming in the woods. Also books are what interests me. Among my favorite authors are Thomas Hardy, Isaac Asimov, George Eliot. </p>
-          <h2 clas="tablet"> Contacts </h2>
-          <p> email: enamarat@yandex.ru </p>
+          <div class="inner-bio">
+            <div class="photo">
+              <img id="photo" src="https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/IMG_0192-min.JPG"/>
+              <h2> Contacts </h2>
+              <p> email: enamarat@yandex.ru </p>
+            </div>
+            <div class="text">
+              <p> My name is Marat Enaliev, and I live in Moscow, Russia. I am an aspiring web developer.
+              Primarily I concetrate my efforts on studying JavaScript. </p>
+              <br>
+              <p> Making career in web development is my personal conscious choice. This job provides you with limitless possibilities to express your creativity, and you always have something new to learn. Self-perfection and self-expression are my key life goals so I'm truly motivated to grow in this field. </p>
+              <br>
+              <p> My hobbies are cycling, roaming in the woods, and reading books.</p>
+            </div>
+          </div>
+
         </div>
       </section>
     </div>

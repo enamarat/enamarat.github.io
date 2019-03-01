@@ -1,3 +1,4 @@
+/**************** Universal styles *********/
 * {
   box-sizing: border-box;
 }
@@ -12,7 +13,50 @@ html, body {
   font-weight: bold;
 }
 
+header label:hover {
+  transform: scale(1.15);
+}
 
+/************ Typography ***********************/
+header label {
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  font-size: 2.2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0 auto;
+  margin-bottom: 0.7rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 80%;
+  color: red;
+  position: absolute;
+  top: 40%;
+}
+
+.bio p {
+  font-size: 1.8rem;
+}
+
+p {
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+/**** Background images**********/
 .slide-one {
   background-image: url("https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/IMG_0194-min.JPG");
 }
@@ -25,11 +69,36 @@ html, body {
   background-image: url("https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/IMG_0190-min.JPG");
 }
 
-[id^="slide"]:checked + .slide {
-  left:0;
-  z-index: 100;
-  transition: left .065s ease-out;
-}
+/************ Layout ************************/
+/*** All slides ****/
+  [id^="slide"]:checked + .slide {
+    left:0;
+    z-index: 100;
+    transition: left .035s ease-out;
+  }
+
+  .wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+
+  .slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:100%;
+    z-index: 10;
+    padding: 8rem 1rem 0;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: left 0s 0.75s;
+    text-align: center;
+  }
 
 header {
   position: absolute;
@@ -39,209 +108,207 @@ header {
   width: 100%;
 }
 
-header label {
-  cursor: pointer;
-  display: inline-block;
-  line-height: 4.25rem;
+/********** Portfolio *****/
+.general {
+    position: absolute;
+    top: 10%;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2rem;
   padding-left: 2rem;
+  padding-right: 2rem;
+  perspective: 700px;
+}
+
+.portfolio-item {
+  width: 20%;
+}
+
+/************* About me ********/
+.bio {
+  padding-top: 2rem;
+  background-color: rgba(26, 139, 237, 0.5);
+  position: absolute;
+  width: 90%;
+  top:8%;
+  left: 5%;
+}
+
+.inner-bio {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text {
+  width: 60%;
+}
+
+.photo {
+  width: 40%;
+}
+
+/**************Images *****************/
+.portfolio-image {
+  width: 100%;
+}
+
+#photo {
+  max-width: 90%;
+  /*min-height: 30vh;*/
+  margin-right: 10px;
+  margin-left: 20px;
+  border: 5px solid #FFF;
+  margin-bottom: 0.5rem;
+}
+
+
+/***************Media queries******************/
+@media only screen and (max-width: 768px) {
+html, body {
+  color: #000000;
+}
+/*********General layout**********/
+header {
+  position: fixed;
+  height: 5%;
+}
+
+.wrap {
+  height: 95%;
+  width: 100%;
+  position: relative;
+  text-align: center;
   font-size: 2rem;
+  top: 4rem;
+  overflow-y: auto;
 }
 
-header label:hover {
-    transform: scale(1.15);
+.slide {
+  height: 45%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left:100%;
+  z-index: 10;
+  padding: 8rem 1rem 0;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: left 0s 0.75s;
+  text-align: center;
 }
 
-/******************************************************/
-@media only screen and (min-width: 480px) {
- .wrap {
-   height: 100%;
-   width: 100%;
-   position: relative;
-   text-align: center;
-   font-size: 2rem;
-   overflow: hidden;
- }
-
- .slide {
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   top: 0;
-   left:100%;
-   z-index: 10;
-   padding: 8rem 1rem 0;
-   background-position: 50% 50%;
-   background-size: cover;
-   transition: left 0s 0.75s;
-   text-align: center;
- }
-
- header label {
-   margin-top: 1rem;
- }
-
- .bio {
-   padding-top: 2rem;
-   background-color: rgba(26, 139, 237, 0.5);
-   position: absolute;
-   width: 90%;
-   top:10%;
-   left: 5%;
- }
-
- h1 {
-   font-size: 2.5rem;
-   margin: 0 auto;
-   margin-bottom: 1rem;
- }
-
- h2 {
-   font-size: 2.2rem;
-   margin: 0 auto;
-   margin-top: 1rem;
-   text-decoration: underline;
- }
-
- p {
-     margin-right: 1rem;
-     margin-left: 1rem;
- }
-
- .bio p {
-   font-size: 1.8rem;
- }
-
- #me {
-   width: 60%;
-   margin-right: 10px;
-   margin-left: 20px;
-   border: 5px solid #FFF;
- }
-
- .tablet {
-   visibility: hidden;
- }
+/***********Main*************/
+.slide-one h1 {
+  position: absolute;
+  top: 25%;
+  /* margin-bottom: 5rem; */
 }
 
-/******************************************/
-@media only screen and (min-width: 768px)  {
- .wrap {
-   font-size: 2.5rem;
-   overflow: hidden;
- }
-
-  .bio {
-    width: 90%;
-  }
-
-  header label {
-    margin-top: 0rem;
-  }
-
-  #me {
-    float: right;
-    width: 45%;
-    margin-right: 10px;
-    margin-left: 20px;
-    border: 5px solid #FFF;
-  }
-
-  .tablet {
-    visibility: visible;
-  }
+.greeting {
+  position: absolute;
+  top: 100%;
 }
-/******************************************/
-@media only screen and (min-width: 1024px) {
-  .wrap {
-    font-size: 2.5rem;
-  }
 
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2.7rem;
-  }
-
-  .tablet {
-    visibility: visible;
-  }
-}
-/**********************************************/
-@media only screen and (min-width: 175px) and (max-width: 479px) and (orientation: portrait) {
- .wrap {
-   height: 100%;
-   width: 100%;
-   position: relative;
-   text-align: center;
-   font-size: 1.9rem;
-   overflow: hidden;
- }
-
- .slide {
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   top: 0;
-   left:100%;
-   z-index: 10;
-   padding: 8rem 1rem 0;
-   background-position: 50% 50%;
-   background-size: cover;
-   transition: left 0s 0.75s;
-   text-align: center;
- }
-
- header label {
-   
-   margin-top: 1rem;
-   color: rgba(0, 0, 0, 1);
- }
-
- .bio {
-   padding-top: 2rem;
-   background-color: rgba(26, 139, 237, 0.5);
-   position: absolute;
-   width: 90%;
-   top:10%;
-   left: 5%;
- }
-
- h1 {
-   font-size: 2.5rem;
-   margin: 0 auto;
-   margin-bottom: 1rem;
- }
-
- h2 {
-   font-size: 2.2rem;
-   margin: 0 auto;
-   margin-top: 1rem;
-   text-decoration: underline;
- }
-
- p {
-     margin-right: 1rem;
-     margin-left: 1rem;
- }
-
- .slide-two h1 {
+/***********Portfolio********/
+ .gallery {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    margin-top: 5rem;
  }
 
- .bio p {
-   font-size: 1.8rem;
+ .portfolio-item {
+   width: 50%;
+   margin-top: 1rem;
+   border: 2px solid black;
  }
 
- #me {
-   width: 60%;
-   margin-right: 10px;
-   margin-left: 20px;
-   border: 5px solid #FFF;
+ .portfolio-item:hover {
+   transform: scale(1.1);
  }
 
- .tablet {
-   visibility: hidden;
+ .opposite-side {
+   display: none;
  }
+
+/***********About**********/
+ .inner-bio {
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+ }
+
+ .photo {
+   width: 90%;
+ }
+
+ .bio {
+     background-color: rgba(26, 139, 237, 0);
+ }
+
+ .bio h1 {
+   background-color: rgba(26, 139, 237, 0.5);
+ }
+
+ .inner-bio {
+   margin-top: 7rem;
+ }
+}
+
+@media only screen and (min-width: 769px) {
+  /****** Animations ************/
+
+  .image {
+    transition: transform 0.5s ease-out;
+    transform-style: preserve-3d;
+  }
+
+  .image:hover {
+    transform: rotateY(-180deg);
+  }
+
+  .portfolio-image {
+    backface-visibility: hidden;
+  }
+
+  .image-opposite {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+  }
+
+  .opposite-side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(180deg);
+    top: 0%;
+    left: 0%;
+  }
+}
+
+/******************************************/
+@media only screen and (max-width: 917px)  {
+    .bio p {
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      color: red;
+      position: absolute;
+      top: 10%;
+    }
+}
+
+/******************************************/
+@media only screen and (min-width: 1270px) {
+  .bio p {
+    font-size: 2rem;
+  }
 }
