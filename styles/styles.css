@@ -178,6 +178,10 @@ header {
   height: 5%;
 }
 
+header label {
+  font-size: 1.8rem;
+}
+
 .wrap {
   height: 95%;
   width: 100%;
