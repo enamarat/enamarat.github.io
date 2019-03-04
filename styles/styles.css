@@ -168,7 +168,7 @@ header {
 
 
 /***************Media queries******************/
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 html, body {
   color: #000000;
 }
@@ -260,7 +260,7 @@ header {
  }
 }
 
-@media only screen and (min-width: 769px) {
+@media screen and (min-width: 769px) {
   /****** Animations ************/
 
   .image {
@@ -293,7 +293,7 @@ header {
 }
 
 /******************************************/
-@media only screen and (max-width: 955px)  {
+@media screen and (max-width: 955px)  {
     .bio p {
       font-size: 1.5rem;
     }
@@ -307,7 +307,7 @@ header {
 }
 
 /******************************************/
-@media only screen and (min-width: 1270px) {
+@media screen and (min-width: 1270px) {
   .bio p {
     font-size: 2rem;
   }
