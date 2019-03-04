@@ -175,11 +175,14 @@ html, body {
 /*********General layout**********/
 header {
   position: fixed;
+  display: flex;
+  justify-content: space-around;
   height: 5%;
 }
 
 header label {
   font-size: 1.8rem;
+  padding-left: 0;
 }
 
 .wrap {
