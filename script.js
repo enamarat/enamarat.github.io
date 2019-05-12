@@ -13,6 +13,15 @@ const changeSection = (event) => {
     label = label.substring(0, 6).trim() + "-div";
   }
 
+  //for a russian version of the website
+  if (chosenLabel.trim() === "главная") {
+    label = "main-div";
+  } else if (chosenLabel.trim() === "портфолио") {
+    label = "portfolio-div";
+  } else if (label.charAt(0) === "о") {
+    label = "about-div";
+  }
+
   document.querySelector(`#${label}`).style.display = "flex";
 }
 
