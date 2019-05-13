@@ -226,12 +226,26 @@ header {
 
 /****** Media queries *******/
 @media screen and (max-width: 768px) {
+  /*** Header ***/
+  header label {
+    font-size: 1.2rem;
+  }
+
+  /*** Portfolio ***/
   #portfolio-div {
-    background-size: auto 100%;
+    background-attachment: fixed;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   #about-div {
-    background-size: auto 100%;
+    background-attachment: fixed;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 
