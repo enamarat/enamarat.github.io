@@ -228,13 +228,13 @@ header {
 @media screen and (max-width: 768px) {
   /*** Typography ***/
   html, body {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   /*** Header ***/
   header label {
     font-size: 1.2rem;
-    padding-left: 1rem;
+    padding-left: 0.7rem;
     color: #000;
   }
 
