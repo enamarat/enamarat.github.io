@@ -227,11 +227,11 @@ header {
 /****** Media queries *******/
 @media screen and (max-width: 768px) {
   #portfolio-div {
-    position: fixed;
+    background-position: center center;
   }
 
   #about-div {
-    position: fixed;
+    background-position: center center;
   }
 }
 
