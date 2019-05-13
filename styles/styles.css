@@ -166,9 +166,13 @@ header {
   .portfolio-item:last-child {
     margin-bottom: 2rem;
   }
-  
+
   .opposite-side {
     display: none;
+  }
+
+  .portfolio-item:hover {
+    transform: scale(1.08);
   }
 
 
@@ -221,6 +225,16 @@ header {
 
 
 /****** Media queries *******/
+@media screen and (max-width: 768px) {
+  #portfolio-div {
+    position: fixed;
+  }
+
+  #about-div {
+    position: fixed;
+  }
+}
+
 @media screen and (min-width: 769px) {
   /**** Portfolio ****/
   .collection {
@@ -255,25 +269,10 @@ header {
     margin-left: 2rem;
     margin-bottom: 1rem;
   }
-
-
-}
-
-@media screen and (max-width: 1024px) {
-  /**** Portfolio ****/
-    .portfolio-item .image img {
-      width: 100%;
-      transition: transform 1.25s;
-    }
-
-    .portfolio-item  img:hover {
-      transform: scale(1.65);
-      }
 }
 
 
 @media screen and (min-width: 1150px) {
-
   /*** About me ***/
   .photo {
     width: 40%;
