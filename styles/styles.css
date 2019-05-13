@@ -202,7 +202,7 @@ header {
   }
 
   .text {
-    width: 60%;
+    width: 90%;
     background-color: rgba(26, 139, 237, 0.5);
   }
 
@@ -225,27 +225,16 @@ header {
 
 
 /****** Media queries *******/
+@media screen and (max-width: 480px) {
+  #about-div {
+    background-image: url("../public/rsz_img_0190_sm");
+  }
+}
+
 @media screen and (max-width: 768px) {
   /*** Header ***/
   header label {
     font-size: 1.2rem;
-  }
-
-  /*** Portfolio ***/
-  #portfolio-div {
-    background-attachment: fixed;
-    webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-  #about-div {
-    background-attachment: fixed;
-    webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
   }
 }
 
