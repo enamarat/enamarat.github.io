@@ -227,7 +227,7 @@ header {
 /****** Media queries *******/
 @media screen and (max-width: 480px) {
   #about-div {
-    background-image: url("../public/rsz_img_0190_sm");
+    background-image: url("https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_img_0190_sm.jpg");
   }
 }
 
