@@ -124,8 +124,7 @@ header {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-size: auto 100%;
-    /* background-size: cover; */
+    background-size: cover;
     background-attachment: fixed;
     background-image: url("https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_img_0195.jpg");
   }
@@ -250,19 +249,14 @@ header {
     color: #1F34DE;
   }
 
-  /*** Portfolio ***/
-  /* #portfolio-div {
-    background-position: center;
-  } */
+  .languages img {
+    margin-top: 0;
+  }
 
+  /*** Portfolio ***/
   .portfolio-item  {
     width: 50%;
   }
-
-  /*** About me ***/
-  /* #about-div {
-    background-position: center;
-  } */
 
 }
 
