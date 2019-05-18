@@ -233,12 +233,12 @@ header {
   /*** Portfolio ***/
   #portfolio-div {
     /* background-position: center; */
-    background-image: url("../public/rsz_img_0195-480.jpg");
+    background-image: url("https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_img_0195-480.jpg");
   }
   /*** About me ***/
   #about-div {
     /* background-position: center; */
-    background-image: url("../public/rsz_img_0190-480.jpg");
+    background-image: url("https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_img_0190-480.jpg");
   }
 
 }
