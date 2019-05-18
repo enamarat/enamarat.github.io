@@ -151,7 +151,7 @@ header {
   .portfolio-item  {
     width: 60%;
     opacity: 0.7;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
 
   .image {
@@ -229,6 +229,18 @@ header {
   header label {
     padding-left: 0.5rem;
   }
+
+  /*** Portfolio ***/
+  #portfolio-div {
+    /* background-position: center; */
+    background-image: url("../public/rsz_img_0195-480.jpg");
+  }
+  /*** About me ***/
+  #about-div {
+    /* background-position: center; */
+    background-image: url("../public/rsz_img_0190-480.jpg");
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -253,6 +265,9 @@ header {
     background-position: center;
   }
 
+  .portfolio-item  {
+    width: 50%;
+  }
 
   /*** About me ***/
   #about-div {
