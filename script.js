@@ -1,7 +1,12 @@
+// When the website loads initially
+const sections = document.querySelectorAll(".section");
+for (let i = 0; i < sections.length; i++) {
+  sections[i].style.display = "none";
+}
+  sections[0].style.display = "flex";
 
 // Display a particular section depending on a clicked link
 const changeSection = (event) => {
-  const sections = document.querySelectorAll(".section");
   for (let i = 0; i < sections.length; i++) {
     sections[i].style.display = "none";
   }
@@ -13,7 +18,7 @@ const changeSection = (event) => {
     label = label.substring(0, 6).trim() + "-div";
   }
 
-  //for a russian version of the website
+  // for a russian version of the website
   if (chosenLabel.trim() === "главная") {
     label = "main-div";
   } else if (chosenLabel.trim() === "портфолио") {
