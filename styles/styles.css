@@ -264,14 +264,11 @@ header {
 
   /*** Header ***/
   header label {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-left: 1rem;
     color: #000;
   }
 
-  .russian {
-    font-size: 1rem;
-  }
 
   .active {
     color: #1F34DE;
