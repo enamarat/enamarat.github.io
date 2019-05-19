@@ -126,7 +126,7 @@ header {
 
 #main-div div {
   position: absolute;
-  top: 30%;
+  top: 20%;
 }
 
   /********** Portfolio *****/
@@ -267,6 +267,10 @@ header {
     font-size: 1.3rem;
     padding-left: 1rem;
     color: #000;
+  }
+
+  .russian {
+    font-size: 1rem;
   }
 
   .active {
