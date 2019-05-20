@@ -254,12 +254,6 @@ header {
     padding-left: 0.5rem;
   }
 
-  header .russian label {
-    padding-left: 0.3rem;
-    font-size: 12px;
-  }
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -277,7 +271,7 @@ header {
 
   header .russian label {
     padding-top: 0.5rem;
-    font-size: 15px;
+    font-size: 12px;
   }
 
 
