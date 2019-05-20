@@ -254,6 +254,10 @@ header {
     padding-left: 0.5rem;
   }
 
+  header .russian label {
+    padding-left: 0.3rem;
+  }
+
 
 }
 
@@ -271,7 +275,8 @@ header {
   }
 
   header .russian label {
-    font-size: 18px;
+    padding-top: 0.5rem;
+    font-size: 15px;
   }
 
 
