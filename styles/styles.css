@@ -44,7 +44,6 @@ header label:hover {
   color: #000;
 }
 
-
 h1 {
   font-size: 3rem;
   margin: 0 auto;
@@ -75,11 +74,18 @@ p {
     margin-left: 1rem;
 }
 
-
 .icons-credits p {
   color: #000;
   font-size: 0.9rem;
   margin-left: 0.5rem;
+}
+
+.russian-first p {
+  font-size: 1.7rem;
+}
+
+.russian p {
+  font-size: 1.4rem;
 }
 
 /************ Layout ************************/
@@ -193,7 +199,6 @@ header {
   transform: scale(1.08);
 }
 
-
   /************* About me ********/
 #about-div:before {
   content: "";
@@ -252,13 +257,11 @@ header {
   transform: rotate(36deg);
 }
 
-
 /****** Media queries *******/
 @media screen and (max-width: 480px) {
   header label {
     padding-left: 0.5rem;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -278,7 +281,6 @@ header {
     padding-top: 0.5rem;
     font-size: 16px;
   }
-
 
   .active {
     color: #1F34DE;
@@ -350,5 +352,4 @@ header {
   .text {
     width: 65%;
   }
-
 }
