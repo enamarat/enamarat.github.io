@@ -196,15 +196,65 @@ header .russian label {
   margin-bottom: 2rem;
 }
 
-.opposite-side {
+.portfolio-item:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+/** Project details **/
+.description {
   display: none;
 }
 
-.portfolio-item:hover {
-  transform: scale(1.08);
+.projectTitle {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: #000;
 }
 
-  /************* About me ********/
+.details {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.details-image {
+  margin-left: 2rem;
+}
+
+.intended {
+  margin-top: 1rem;
+  color: black;
+  background-color: rgba(216, 222, 31, 0.5);
+}
+
+.link {
+  text-align: left;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.link a {
+  color: blue;
+}
+
+.link a:hover {
+  color: purple;
+}
+
+.go-back {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  color: black;
+}
+
+.go-back:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+/************* About me ********/
 #about-div:before {
   content: "";
   display: flex;
@@ -300,6 +350,18 @@ header .russian label {
     width: 50%;
   }
 
+  /* Project details */
+  .details {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .details-image {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 50%;
+  }
+
   /*** About me ***/
   .inner-bio {
     padding-top: 0rem;
@@ -327,6 +389,12 @@ header .russian label {
     margin-bottom: 0;
   }
 
+  /** Project details **/
+  .details-image {
+    width: 35%;
+    max-height: 300px;
+  }
+
   /******** About me ***********/
   .inner-bio {
     display: flex;
@@ -349,6 +417,11 @@ header .russian label {
 
 
 @media screen and (min-width: 1150px) {
+  /** Project details **/
+  .details-image {
+    width: 30%;
+  }
+
   /*** About me ***/
   .photo {
     width: 35%;

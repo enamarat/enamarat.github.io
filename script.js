@@ -45,3 +45,26 @@ const highlightLink = (event) => {
 }
 
 document.querySelector(".labels").addEventListener("click", highlightLink);
+
+// Show project's details upon clicking on its image
+const showDetails = (event) => {
+  const projects = document.querySelectorAll(".portfolio-image");
+  let index = Array.from(projects).indexOf(event.target);
+
+  if (event.target.className == "portfolio-image") {
+    document.querySelector(".gallery").style.display = "none";
+    document.querySelectorAll(".description")[index].style.display = "block";
+  }
+}
+
+document.querySelector(".collection").addEventListener("click", showDetails);
+
+// Return to gallery after visiting project's details page
+const returnToGallery = (event) => {
+  // document.querySelectorAll(".description")
+  event.target.parentNode.style.display = "none";
+  document.querySelector(".gallery").style.display = "block";
+}
+
+const linksBackToGallery = document.querySelectorAll(".go-back");
+linksBackToGallery.forEach( link => link.addEventListener('click', returnToGallery));
