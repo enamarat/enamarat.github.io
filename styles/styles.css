@@ -144,7 +144,8 @@ header .russian label {
   top: 20%;
 }
 
-.russian-first {
+.russian-first,
+.english-first {
   width: 100%;
   text-align: center;
 }
