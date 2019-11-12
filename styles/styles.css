@@ -311,9 +311,6 @@ header .russian label {
   border: 5px solid #FFF;
 }
 
-#twitter:hover {
-  transform: rotate(36deg);
-}
 
 /****** Media queries *******/
 @media screen and (max-width: 480px) {
