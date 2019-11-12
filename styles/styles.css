@@ -144,6 +144,11 @@ header .russian label {
   top: 20%;
 }
 
+.russian-first {
+  width: 100%;
+  text-align: center;
+}
+
   /********** Portfolio *****/
 #portfolio-div:before {
   content: "";
