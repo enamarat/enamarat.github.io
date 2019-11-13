@@ -2,24 +2,54 @@
 const sections = document.querySelectorAll(".section");
 sections[0].style.display = "flex";
 
+const displayPortfolioImages = () => {
+  const portfolioImages = [
+    "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_quiz3.jpg",
+    "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_5.jpg",
+    "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project1-1.jpg",
+    "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project2-1.jpg",
+    "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project3-1.jpg",
+    "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project4-1.jpg",
+    "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project5-1.jpg",
+    "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_21.jpg"
+  ];
+
+  let collectionContent = "";
+  for (let i = 0; i < portfolioImages.length; i++) {
+    collectionContent += `
+    <div class="portfolio-item">
+      <div class="image">
+        <img class="portfolio-image" src="${portfolioImages[i]}"/>
+      </div>
+    </div>
+    `;
+  }
+  document.querySelector(".collection").innerHTML = collectionContent;
+}
+
 // Display a particular section depending on a clicked link
 const changeSection = (event) => {
   for (let i = 0; i < sections.length; i++) {
     sections[i].style.display = "none";
   }
 
-  let chosenLabel = event.target.textContent.toLowerCase();
+  let chosenLabel = event.target.textContent.toLowerCase().trim();
 
-  let label = chosenLabel.trim() + "-div";
+  if (chosenLabel === "portfolio") {
+    displayPortfolioImages();
+  }
+
+  let label = chosenLabel + "-div";
   if (label.charAt(0) === "a") {
     label = label.substring(0, 6).trim() + "-div";
   }
 
-  // for a russian version of the website
-  if (chosenLabel.trim() === "главная") {
+  // for the russian version of the website
+  if (chosenLabel === "главная") {
     label = "main-div";
-  } else if (chosenLabel.trim() === "портфолио") {
+  } else if (chosenLabel === "портфолио") {
     label = "portfolio-div";
+    displayPortfolioImages();
   } else if (label.charAt(0) === "о") {
     label = "about-div";
   }
@@ -58,7 +88,6 @@ document.querySelector(".collection").addEventListener("click", showDetails);
 
 // Return to gallery after visiting project's details page
 const returnToGallery = (event) => {
-  // document.querySelectorAll(".description")
   event.target.parentNode.style.display = "none";
   document.querySelector(".gallery").style.display = "block";
 }
