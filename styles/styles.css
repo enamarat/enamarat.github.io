@@ -8,7 +8,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Indie Flower', Arial, sans-serif;
+  font-family: 'Indie Flower', Verdana, serif;
   font-size: 1rem;
   color: #FFFFFF;
   font-weight: bold;
@@ -38,6 +38,12 @@ header label {
   padding-left: 2rem;
   margin-top: 1rem;
   font-size: 1.7rem;
+}
+
+.russian-label {
+  padding-top: 0.5rem;
+  font-size: 20px;
+  padding-left: 1rem;
 }
 
 header label:hover {
@@ -84,14 +90,6 @@ p {
   margin-left: 0.5rem;
 }
 
-.russian-first p {
-  font-size: 1.7rem;
-}
-
-.russian-second p {
-  font-size: 1.4rem;
-}
-
 /************ Layout ************************/
 /*** Header ****/
 .languages {
@@ -106,17 +104,13 @@ p {
 
 .languages img:hover {
   transform: rotate(15deg);
+  cursor: pointer;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-
-header .russian label {
-  padding-top: 0.5rem;
-  font-size: 20px;
 }
 
 /************* Main *************/
@@ -144,12 +138,7 @@ header .russian label {
   top: 20%;
 }
 
-.russian-first {
-  width: 100%;
-  text-align: center;
-}
-
-.english-greeting {
+.greeting {
   width: 100%;
   text-align: center;
   display: flex;
@@ -217,11 +206,19 @@ header .russian label {
   cursor: pointer;
 }
 
-/** Project details **/
-.description {
-  display: none;
+#codepen {
+  margin-top:1rem;
 }
 
+#codepen a {
+  color:blue;
+}
+
+#codepen a:hover {
+  color:yellow;
+}
+
+/** Project details **/
 .projectTitle {
   margin-top: 1rem;
   font-size: 3rem;
@@ -254,7 +251,7 @@ header .russian label {
 }
 
 .link a:hover {
-  color: purple;
+  color: red;
 }
 
 .go-back {
@@ -308,7 +305,9 @@ header .russian label {
 
 .text {
   width: 90%;
-  background-color: rgba(26, 139, 237, 0.5);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(26, 139, 237, 0.6);
 }
 
 .photo {
@@ -337,7 +336,6 @@ header .russian label {
     padding-left: 0.5rem;
   }
 
-
 }
 
 @media screen and (max-width: 768px) {
@@ -353,7 +351,7 @@ header .russian label {
     color: #000;
   }
 
-  header .russian label {
+  .russian-label {
     padding-top: 0.5rem;
     font-size: 16px;
   }

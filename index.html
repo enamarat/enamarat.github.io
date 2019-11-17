@@ -19,157 +19,28 @@
         <label id="about"> About Me </label>
       </div>
       <div class="languages">
-        <a href="index.html"> <img src="./public/united-states.png" alt="The flag of the USA"/> </a>
-        <a href="indexRUS.html"> <img src="./public/russia.png" alt="The flag of Russian Federeation"/> </a>
+        <img id="english" class="language-icon" src="./public/united-states.png" alt="The flag of the USA"/>
+        <img id="russian" class="language-icon" src="./public/russia.png" alt="The flag of Russian Federeation"/>
       </div>
     </header>
 
     <main class="wrap">
 
         <div id="main-div" class="section vertical-container">
-          <div class="english-greeting">
+          <div class="greeting">
             <h1> Welcome to my website! </h1>
             <p> You can look at portfolio of my works here and get some information about me. </p>
           </div>
       </div>
 
       <div id="portfolio-div" class="section vertical-container">
-        <!--Description of portfolio projects, hidden until a particular project is clicked-->
-        <div class="description">
-          <p class="go-back"> go back </p>
-          <h3 class="projectTitle"> Star quiz </h3>
-          <div class="details">
-            <img class="details-image" src="https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_quiz2.jpg"/>
-            <div class="information">
-              <p class="link"> <a href="https://enamarat.github.io/stars-quiz"> Live demo </a> </p>
-              <p class="link">  <a href="https://github.com/enamarat/stars-quiz"> GitHub repository </a> </p>
-              <p class="intended"> A simple quiz about stars in the Milky Way Galaxy. A user
-                 must answer 5 questions. There are 4 option answers for every question with only
-                one being true. Depending on total score different messages appear on the final
-                screen. Vanilla JavaScript and basic CSS were used for this project. </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="description">
-          <p class="go-back"> go back </p>
-          <h3 class="projectTitle"> Let me remind you </h3>
-          <div class="details">
-            <img class="details-image" src="./public/rsz_5.jpg"/>
-            <div class="information">
-              <p class="link"> <a href="https://enamarat.github.io/let-me-remind-you"> Live demo </a> </p>
-              <p class="link">  <a href="https://github.com/enamarat/let-me-remind-you"> GitHub repository </a> </p>
-              <p class="intended"> A to-do list application with the help of which a user can create
-                tasks, assign subtasks to them, edit, delete, and mark them as completed.
-                This project involves the usage of browser's local storage
-                so that tasks created by user are stored in its memory and don't
-                dissapear after the browser is closed. </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="description">
-          <p class="go-back"> go back </p>
-          <h3 class="projectTitle"> Random Quote Generator </h3>
-          <div class="details">
-            <img class="details-image" src="./public/rsz_project1-2.jpg">
-            <div class="information">
-              <p class="link"> <a href="https://enamarat.github.io/techdegree-project-1"> Live demo </a> </p>
-              <p class="link">  <a href="https://github.com/enamarat/techdegree-project-1"> GitHub repository </a> </p>
-              <p class="intended"> A simple web page which displays random quotes when a user clicks a button
-                at the bottom of the screen. This project reflects my ability to work with basic
-                JavaScript code, HTML and CSS. A new quote appears on the screen every 10 seconds
-                even if a user doesn't do anything due to setInterval function.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="description">
-          <p class="go-back"> go back </p>
-          <h3 class="projectTitle"> Pagination And Content Filter </h3>
-          <div class="details">
-            <img class="details-image" src="./public/rsz_project2-2.jpg">
-            <div class="information">
-              <p class="link"> <a href="https://enamarat.github.io/techdegree-project-2"> Live demo </a> </p>
-              <p class="link"> <a href="https://github.com/enamarat/techdegree-project-2"> GitHub repository </a> </p>
-              <p class="intended"> This is a web page which contains contacts of fictional employees. All
-                the data are stored on the page. A user can look through employees list using pagination buttons
-                at the bottom of the screen or a search field. The project demonstrates my knowledge of how to
-                iterate through arrays of data and find the paticular information that is required. </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="description">
-          <p class="go-back"> go back </p>
-          <h3 class="projectTitle"> An Interactive Web Form </h3>
-          <div class="details">
-            <img class="details-image" src="./public/rsz_project3-2.jpg">
-            <div class="information">
-              <p class="link"> <a href="https://enamarat.github.io/techdegree-project-3"> Live demo </a> </p>
-              <p class="link"> <a href="https://github.com/enamarat/techdegree-project-3"> GitHub repository </a> </p>
-              <p class="intended"> This web form validates user's input on the client side of a web application.
-              Form data are not submitted and request to a server is not send until all the fields of the form are filled
-              in the correct format. The project is based on DOM elements targeting and
-              manipulation as well as on conditional statements. </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="description">
-          <p class="go-back"> go back </p>
-          <h3 class="projectTitle"> An Object Oriented Programming Game </h3>
-          <div class="details">
-            <img class="details-image" src="./public/rsz_project4-2.jpg">
-            <div class="information">
-              <p class="link"> <a href="https://enamarat.github.io/techdegree-project-4"> Live demo </a> </p>
-              <p class="link"> <a href="https://github.com/enamarat/techdegree-project-4"> GitHub repository </a> </p>
-              <p class="intended"> A browser-based, word guessing game "Phrase Hunter."
-                A player tries to guess a random, hidden phrase by clicking letters on the screen or keyboard.
-                This is an application built on foundation of object oriented programming paradigm. It is divided into
-                separate objects each of which has its set of properties and methods.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="description">
-          <p class="go-back"> go back </p>
-          <h3 class="projectTitle"> An Employee Directory </h3>
-          <div class="details">
-            <img class="details-image" src="./public/rsz_project5-2.jpg">
-            <div class="information">
-              <p class="link"> <a href="https://enamarat.github.io/techdegree-project-5"> Live demo </a> </p>
-              <p class="link"> <a href="https://github.com/enamarat/techdegree-project-5"> GitHub repository </a> </p>
-              <p class="intended"> This project represents a database of employees for a fictional company.
-                Employees data are received from a third-party API after a GET request is sent to it.
-                Then the response from the API in JSON format is converted to HTML on the web page.
-                Here you may observe a technology known as AJAX in action. </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="description">
-          <p class="go-back"> go back </p>
-          <h3 class="projectTitle"> In the spotlight </h3>
-          <div class="details">
-            <img class="details-image" src="./public/rsz_22.jpg">
-            <div class="information">
-              <p class="link"> <a href="https://in-the-spotlight.herokuapp.com/"> Live demo </a> </p>
-              <p class="link"> <a href="https://github.com/enamarat/techdegree-project-12"> GitHub repository </a> </p>
-              <p class="intended"> This is a full-scale web application deployed on Heroku Cloud Service. It sends requests
-                to third-party APIs and provides stock market prices and foreign currency exchange rates. It
-                consists of both front-end and back-end and is written solely in JavaScript. React library was used
-                for the client side of the application and Express framework for the server side. Database was built with MongoDB.</p>
-            </div>
-          </div>
-        </div>
 
         <!-- A gallery -->
         <div class="gallery vertical-container">
           <h1> My works </h1>
           <div class="collection vertical-container">
           </div>
+          <p id="codepen"> There are also my projects on <a href="https://codepen.io/enamarat"> Codepen </a></p>
         </div>
     </div>
 
