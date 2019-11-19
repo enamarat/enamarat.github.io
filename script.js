@@ -18,7 +18,7 @@ const portfolioItems = [
     linkToLiveDemo: "https://enamarat.github.io/stars-quiz",
     linkToGithub: "https://github.com/enamarat/stars-quiz",
     russianDescription: "Простой опрос о звёздах в галактике Млечный Путь. Пользователь должен ответить на 5 вопросов. На каждый вопрос есть 4 варианта ответа, из которых только один является верным. В зависимости от общего числа набранных очков разные сообщения появляются на итоговом экране. Vanilla JavaScript и базовый CSS были использованы для данного проекта.",
-    description: "A simple quiz about stars in the Milky Way Galaxy. A user must answer 5 questions. There are 4 option answers for every question with only one being true. Depending on total score different messages appear on the final screen. Vanilla JavaScript and basic CSS were used for this project."
+    description: "A simple quiz about stars in the Milky Way Galaxy. A user must answer 5 questions. There are 4 possible answers for every question with only one being true. Depending on total score different messages appear on the final screen. Vanilla JavaScript and basic CSS were used for this project."
   },
   {
     name: "Let me remind you",
@@ -259,7 +259,7 @@ const showDetails = (event) => {
   }
 
   // Display content
-  if (event.target.className == "portfolio-image" | 
+  if (event.target.className == "portfolio-image" |
       event.target.className == "language-icon") {
     let description = `<div class='description'>
       <p class='go-back'> ${returnToGalleryLink} </p>
