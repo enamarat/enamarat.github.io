@@ -58,7 +58,7 @@ const portfolioItems = [
   },
   {
     name: "An Object Oriented Programming Game",
-    russianNane: "Игра объектно ориентированного программирования",
+    russianName: "Игра объектно ориентированного программирования",
     imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project4-2.jpg",
     linkToLiveDemo: "https://enamarat.github.io/techdegree-project-4",
     linkToGithub: "https://github.com/enamarat/techdegree-project-4",
