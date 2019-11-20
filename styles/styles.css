@@ -379,6 +379,10 @@ header {
     width: 50%;
   }
 
+  #codepen a {
+    color: red;
+  }
+
   /* Project details */
   .details {
     flex-direction: column-reverse;
