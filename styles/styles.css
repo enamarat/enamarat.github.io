@@ -98,6 +98,8 @@ p {
 }
 
 .languages img {
+  max-width: 100%;
+  height: auto;
   margin-top: 17px;
   margin-right: 5px;
 }
@@ -335,7 +337,39 @@ header {
 
 
 /****** Media queries *******/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 369px) {
+  /** Header **/
+  header {
+    display: flex;
+    /*flex-direction: column-reverse;
+    align-items: center;*/
+  }
+
+  .labels {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  .labels label {
+    margin: 0;
+  }
+
+  .languages {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .languages img {
+    width: 25px;
+    height: 22px;
+  }
+}
+
+@media screen and (min-width: 370px) and (max-width: 480px) {
   /*** Typography ***/
   #bio-header {
       font-size: 2.7rem;
@@ -345,7 +379,6 @@ header {
   header label {
     padding-left: 0.5rem;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -380,7 +413,7 @@ header {
   }
 
   #codepen a {
-    color: red;
+    color: #E09AE6;
   }
 
   /* Project details */
