@@ -98,8 +98,8 @@ p {
 }
 
 .languages img {
-  max-width: 100%;
-  height: auto;
+  width: 24px;
+  height: 21px;
   margin-top: 17px;
   margin-right: 5px;
 }
