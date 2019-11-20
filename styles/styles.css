@@ -225,13 +225,23 @@ header {
   color: #000;
 }
 
+.description {
+  width: 100%;
+}
+
 .details {
+  width: 100%;
   display: flex;
   margin-top: 2rem;
 }
 
 .details-image {
   margin-left: 2rem;
+  width: 100%;
+}
+
+.information {
+  width: 100%;
 }
 
 .intended {
