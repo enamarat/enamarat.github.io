@@ -286,11 +286,23 @@ document.querySelector(".collection").addEventListener("click", showDetails);
 const returnToGallery = (event) => {
   portfolioItemDetailsShown = false;
   rememberedIndex = null;
+
+  let portfolioHeader = null;
+  let portfolioInscription = null;
+  if (language === "english") {
+    portfolioHeader = "My works";
+    portfolioInscription = "There are also my projects on";
+  } else if (language === "russian") {
+    portfolioHeader = "Мои работы";
+    portfolioInscription = "Мои проекты есть также на";
+  }
+
+
   let content = `<div class="gallery vertical-container">
-    <h1> My works </h1>
+    <h1> ${portfolioHeader} </h1>
       <div class="collection vertical-container">
       </div>
-      <p id="codepen"> There are also my projects on <a href="https://codepen.io/enamarat"> Codepen </a></p>
+      <p id="codepen"> ${portfolioInscription} <a href="https://codepen.io/enamarat"> Codepen </a></p>
   </div>`;
   document.querySelector("#portfolio-div").innerHTML = content;
   displayPortfolioImages();
