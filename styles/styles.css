@@ -335,6 +335,9 @@ header {
   border: 5px solid #FFF;
 }
 
+#codewars {
+  margin-top: 0.5rem;
+}
 
 /****** Media queries *******/
 @media screen and (max-width: 480px) {
