@@ -335,6 +335,10 @@ header {
   border: 5px solid #FFF;
 }
 
+.personal {
+  text-align: center;
+}
+
 #codewars {
   margin-top: 0.5rem;
 }
