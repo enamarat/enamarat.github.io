@@ -128,7 +128,7 @@ const translateText = () => {
     document.querySelectorAll(".text p")[1].textContent = "Построение карьеры в веб-разработке - этой мой личный, сознательный выбор. Эта работа предоставляет тебе безграничные возможности для творчества, и всегда есть что-то новое, чему ты можешь научиться. Самосовершествование и самовыражение являются моими ключевыми целями в жизни, поэтому я по-настоящему мотивирован расти в этой области.";
     document.querySelectorAll(".text p")[2].textContent = "Мои увлечения - это велосипедные поездки, прогулки по лесу и чтение книг.";
     document.querySelector(".photo h2").textContent = "Контакты";
-    document.querySelector(".photo p").textContent = "электронная почта: enamarat@yandex.ru";
+    document.querySelector(".photo p").textContent = "электронная почта: enamarat@gmail.com";
   } else if (language === "english") {
     // Navigation links
     document.querySelector("#main").textContent = "Main";
@@ -151,7 +151,7 @@ const translateText = () => {
     document.querySelectorAll(".text p")[1].textContent = "Making career in web development is my personal conscious choice. This job provides you with limitless possibilities to express your creativity, and you always have something new to learn. Self-perfection and self-expression are my key life goals, so I'm truly motivated to grow in this field.";
     document.querySelectorAll(".text p")[2].textContent = "My hobbies are cycling, roaming in the woods, and reading books.";
     document.querySelector(".photo h2").textContent = "Contacts";
-    document.querySelector(".photo p").textContent = "email: enamarat@yandex.ru";
+    document.querySelector(".photo p").textContent = "email: enamarat@gmail.com";
   }
 }
 
