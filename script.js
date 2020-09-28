@@ -1,4 +1,3 @@
-// databaseconst
 const portfolioImages = [
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_quiz3.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_victory.jpg",
@@ -126,7 +125,7 @@ const translateText = () => {
     document.querySelector("#bio-header").textContent = "Не история, но видение будущего";
     document.querySelectorAll(".text p")[0].textContent = "Меня зовут Марат Еналиев, и я живу в Москве, Россия. Я начинающий веб-разработчик. Главным образом я концентрирую свои усилия на изучении JavaScript.";
     document.querySelectorAll(".text p")[1].textContent = "Построение карьеры в веб-разработке - этой мой личный, сознательный выбор. Эта работа предоставляет тебе безграничные возможности для творчества, и всегда есть что-то новое, чему ты можешь научиться. Самосовершествование и самовыражение являются моими ключевыми целями в жизни, поэтому я по-настоящему мотивирован расти в этой области.";
-    document.querySelectorAll(".text p")[2].textContent = "Мои увлечения - это велосипедные поездки, прогулки по лесу и чтение книг.";
+    document.querySelectorAll(".text p")[2].innerHTML="Я программист-самоучка без высшего или специального образования в области компьютерных наук. Я закончил онлайн-курсы на <a href='https://www.codecademy.com/'>Codecademy</a>, <a href='https://teamtreehouse.com/'>Treehouse</a> и <a href='https://www.freecodecamp.org/'>freeCodeCamp</a>.";
     document.querySelector(".photo h2").textContent = "Контакты";
     document.querySelector(".photo p").textContent = "электронная почта: enamarat@gmail.com";
   } else if (language === "english") {
@@ -149,7 +148,7 @@ const translateText = () => {
     document.querySelector("#bio-header").textContent = "Not history , but vision of the future";
     document.querySelectorAll(".text p")[0].textContent = "My name is Marat Enaliev, and I live in Moscow, Russia. I am an aspiring web developer. Primarily I concetrate my efforts on studying JavaScript.";
     document.querySelectorAll(".text p")[1].textContent = "Making career in web development is my personal conscious choice. This job provides you with limitless possibilities to express your creativity, and you always have something new to learn. Self-perfection and self-expression are my key life goals, so I'm truly motivated to grow in this field.";
-    document.querySelectorAll(".text p")[2].textContent = "My hobbies are cycling, roaming in the woods, and reading books.";
+    document.querySelectorAll(".text p")[2].innerHTML="I'm a self-taught coder with no university or college degree in Computer Science. I finished online courses on <a href='https://www.codecademy.com/'>Codecademy</a>, <a href='https://teamtreehouse.com/'>Treehouse</a>, and <a href='https://www.freecodecamp.org/'>freeCodeCamp</a>.";
     document.querySelector(".photo h2").textContent = "Contacts";
     document.querySelector(".photo p").textContent = "email: enamarat@gmail.com";
   }

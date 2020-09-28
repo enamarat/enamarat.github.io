@@ -345,6 +345,26 @@ header {
   margin-top: 0.5rem;
 }
 
+.certificate {
+  width: 150px;
+  height: 100px;
+}
+
+.certificate:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.links a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.links a:hover {
+  color: red;
+}
+
+
 /****** Media queries *******/
 @media screen and (max-width: 480px) {
   /*** Typography ***/
@@ -410,6 +430,15 @@ header {
     padding-top: 0rem;
   }
 
+  #certificates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate {
+    margin-top: 3px;
+  }
 }
 
 @media screen and (min-width: 769px) {
