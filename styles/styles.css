@@ -317,7 +317,7 @@ header {
 
 .text {
   width: 90%;
-  padding-top: 1rem;
+  padding-top: 1.2rem;
   padding-bottom: 1rem;
   background-color: rgba(26, 139, 237, 0.6);
 }
@@ -363,6 +363,54 @@ header {
 .links a:hover {
   color: red;
 }
+/** show and hide bio**/
+.minus {
+  width: 20px;
+  height: 6px;
+  background-color: white;
+  float: right;
+  margin-right: 17px;
+  border: 2px solid black;
+}
+
+.minus:hover {
+  cursor: pointer;
+}
+
+.plus {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  margin-left: 15px;
+  float: right;
+  display: none;
+}
+
+.plus:hover {
+  cursor: pointer;
+}
+
+.plus-vertical {
+  width: 6px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  left: 7px;
+  border: 2px solid black;
+}
+
+.plus-horizontal {
+  width: 20px;
+  height: 6px;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  top: 7px;
+  border: 2px solid black;
+}
+
+
 
 
 /****** Media queries *******/
