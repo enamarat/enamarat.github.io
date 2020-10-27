@@ -26,7 +26,7 @@ const portfolioItems = [
     imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_victory3.jpg",
     linkToLiveDemo: "https://enamarat.github.io/keyboard-of-victory",
     linkToGithub: "https://github.com/enamarat/keyboard-of-victory",
-    russianDescription: "Простая, но весёлая маленькая игра. Внимание! Она предназначена для игры на компьютере с клавиатурой. Игрок должен устранить слова, падающие с верхней части экрана, до того, как они достигнут красной линии. Это достигается путём их набора на клавиатуре без ошибок. Успешный набор текста в течение одной минуты обеспечивает победу. Проект сочетает анимации CSS и слушатели событий DOM JavaScript.",
+    russianDescription: "Простая, но весёлая маленькая игра. Внимание! Она предназначена для компьютера с клавиатурой. Игрок должен устранить слова, падающие с верхней части экрана, до того, как они достигнут красной линии. Это достигается путём их набора на клавиатуре без ошибок. Успешный набор текста в течение одной минуты обеспечивает победу. Проект сочетает анимации CSS и слушатели событий DOM JavaScript.",
     description: "A simple but fun little game. Attention! It is meant to be played on a computer with a keyboard. Player must eliminate words falling from the top of the screen before they reach the red line. This is achieved by typing them on a keyboard without mistakes. Successful typing during one minute provides victory. The project combines CSS animations and JavaScript DOM event listeners."
   },
   {
@@ -122,9 +122,9 @@ const translateText = () => {
       document.querySelector("#codepen").innerHTML = `Мои проекты есть также на <a href="https://codepen.io/enamarat" target='_blank'> Codepen </a>`;
     }
     //"About Me" section
-    document.querySelector("#bio-header").textContent = "Не история, но видение будущего";
+    document.querySelector("#bio-header").textContent = "Не история, а видение будущего";
     document.querySelectorAll(".text p")[0].textContent = "Меня зовут Марат Еналиев, и я живу в Москве, Россия. Я начинающий веб-разработчик. Главным образом я концентрирую свои усилия на изучении JavaScript.";
-    document.querySelectorAll(".text p")[1].textContent = "Построение карьеры в веб-разработке - этой мой личный, сознательный выбор. Эта работа предоставляет тебе безграничные возможности для творчества, и всегда есть что-то новое, чему ты можешь научиться. Самосовершествование и самовыражение являются моими ключевыми целями в жизни, поэтому я по-настоящему мотивирован расти в этой области.";
+    document.querySelectorAll(".text p")[1].textContent = "Построение карьеры в веб-разработке - этой мой личный, сознательный выбор. Эта работа предоставляет тебе безграничные возможности для творчества, и всегда есть что-то новое, чему ты можешь научиться.";
     document.querySelectorAll(".text p")[2].innerHTML="Я программист-самоучка без высшего или специального образования в области компьютерных наук. Я закончил онлайн-курсы на <a href='https://www.codecademy.com/' target='_blank'>Codecademy</a>, <a href='https://teamtreehouse.com/' target='_blank'>Treehouse</a> и <a href='https://www.freecodecamp.org/' target='_blank'>freeCodeCamp</a>.";
     document.querySelector(".photo h2").textContent = "Контакты";
     document.querySelector(".photo p").textContent = "электронная почта: enamarat@gmail.com";
@@ -147,7 +147,7 @@ const translateText = () => {
     //"About Me" section
     document.querySelector("#bio-header").textContent = "Not history , but vision of the future";
     document.querySelectorAll(".text p")[0].textContent = "My name is Marat Enaliev, and I live in Moscow, Russia. I am an aspiring web developer. Primarily I concetrate my efforts on studying JavaScript.";
-    document.querySelectorAll(".text p")[1].textContent = "Making career in web development is my personal conscious choice. This job provides you with limitless possibilities to express your creativity, and you always have something new to learn. Self-perfection and self-expression are my key life goals, so I'm truly motivated to grow in this field.";
+    document.querySelectorAll(".text p")[1].textContent = "Making career in web development is my personal conscious choice. This job provides you with limitless possibilities to express your creativity, and you always have something new to learn.";
     document.querySelectorAll(".text p")[2].innerHTML="I'm a self-taught coder with no university or college degree in Computer Science. I finished online courses on <a href='https://www.codecademy.com/' target='_blank'>Codecademy</a>, <a href='https://teamtreehouse.com/' target='_blank'>Treehouse</a>, and <a href='https://www.freecodecamp.org/' target='_blank'>freeCodeCamp</a>.";
     document.querySelector(".photo h2").textContent = "Contacts";
     document.querySelector(".photo p").textContent = "email: enamarat@gmail.com";
@@ -317,3 +317,21 @@ const returnToGallery = (event) => {
   displayPortfolioImages();
   document.querySelector(".collection").addEventListener("click", showDetails);
 }
+
+// Hide/show bioraphy text
+let textIsVisible = true;
+const hideOrShowText = () => {
+  if (textIsVisible === true) {
+    textIsVisible = false;
+    document.querySelector(".text").style.visibility = "hidden";
+    document.querySelector(".minus").style.display = "none";
+    document.querySelector(".plus").style.display = "block";
+    document.querySelector(".plus").style.visibility = "visible";
+  } else if (textIsVisible === false) {
+    textIsVisible = true;
+    document.querySelector(".text").style.visibility = "visible";
+    document.querySelector(".minus").style.display = "block";
+    document.querySelector(".plus").style.display = "none";
+  }
+}
+document.querySelector(".sign").addEventListener("click", hideOrShowText);
