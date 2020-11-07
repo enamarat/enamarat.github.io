@@ -124,7 +124,7 @@ const translateText = () => {
     //"About Me" section
     document.querySelector("#bio-header").textContent = "Не история, а видение будущего";
     document.querySelectorAll(".text p")[0].textContent = "Меня зовут Марат Еналиев, и я живу в Москве, Россия. Я начинающий веб-разработчик. Главным образом я концентрирую свои усилия на изучении JavaScript.";
-    document.querySelectorAll(".text p")[1].textContent = "Построение карьеры в веб-разработке - этой мой личный, сознательный выбор. Эта работа предоставляет тебе безграничные возможности для творчества, и всегда есть что-то новое, чему ты можешь научиться.";
+    document.querySelectorAll(".text p")[1].textContent = "Построение карьеры в веб-разработке - это мой личный, сознательный выбор. Эта работа предоставляет тебе безграничные возможности для творчества, и всегда есть что-то новое, чему ты можешь научиться.";
     document.querySelectorAll(".text p")[2].innerHTML="Я программист-самоучка без высшего или специального образования в области компьютерных наук. Я закончил онлайн-курсы на <a href='https://www.codecademy.com/' target='_blank'>Codecademy</a>, <a href='https://teamtreehouse.com/' target='_blank'>Treehouse</a> и <a href='https://www.freecodecamp.org/' target='_blank'>freeCodeCamp</a>.";
     document.querySelector(".photo h2").textContent = "Контакты";
     document.querySelector(".photo p").textContent = "электронная почта: enamarat@gmail.com";
