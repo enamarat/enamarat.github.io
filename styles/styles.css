@@ -341,10 +341,29 @@ header {
   align-items: center;
 }
 
+/** icons **/
 .badges {
   margin-top: 0.5rem;
 }
 
+.iconify {
+   width: 24px;
+   height: 24px;
+ }
+
+ #leetcode {
+   color: orange;
+ }
+
+ #codewars {
+   color: red;
+ }
+
+ #github {
+   color: white;
+ }
+
+/** certificates **/
 .certificate {
   width: 150px;
   height: 100px;
@@ -409,9 +428,6 @@ header {
   top: 7px;
   border: 2px solid black;
 }
-
-
-
 
 /****** Media queries *******/
 @media screen and (max-width: 480px) {
