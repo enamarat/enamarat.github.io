@@ -119,7 +119,6 @@ const translateText = () => {
     // "Portfolio" section
     if (portfolioItemDetailsShown === false) {
       document.querySelector(".gallery h1").textContent = "Мои работы";
-      document.querySelector("#codepen").innerHTML = `Мои проекты есть также на <a href="https://codepen.io/enamarat" target='_blank'> Codepen </a>`;
     }
     //"About Me" section
     document.querySelector("#bio-header").textContent = "Не история, а видение будущего";
@@ -138,11 +137,10 @@ const translateText = () => {
     }
     // "Main" section
     document.querySelector("#main-div h1").textContent = "Welcome to my website!";
-    document.querySelector("#main-div p").textContent = "You can look at portfolio of my works here and get some information about me.";
+    document.querySelector("#main-div p").textContent = "You can look at the portfolio of my works here and get to know me a little.";
     // "Portfolio" section
     if (portfolioItemDetailsShown === false) {
       document.querySelector(".gallery h1").textContent = "My works";
-      document.querySelector("#codepen").innerHTML = `There are also my projects on <a href="https://codepen.io/enamarat" target='_blank'> Codepen </a>`;
     }
     //"About Me" section
     document.querySelector("#bio-header").textContent = "Not history , but vision of the future";
@@ -156,9 +154,9 @@ const translateText = () => {
 
 // Switch languages
 const switchLanguages = (event) => {
-  if (event.target.id.trim() === "russian") {
+  if (event.target.parentNode.parentNode.id.trim() === "russian") {
     language = "russian";
-  } else if (event.target.id.trim() === "english") {
+  } else if (event.target.parentNode.parentNode.id.trim() === "english") {
     language = "english";
   }
   translateText();
@@ -166,7 +164,8 @@ const switchLanguages = (event) => {
     showDetails(event);
   }
 }
-document.querySelector(".languages").addEventListener('click', switchLanguages);
+document.querySelector("#english").addEventListener('click', switchLanguages);
+document.querySelector("#russian").addEventListener('click', switchLanguages);
 
 // Highlight active link by changing its color
 const highlightLink = (event) => {
@@ -269,7 +268,7 @@ const showDetails = (event) => {
 
   // Display content
   if (event.target.className == "portfolio-image" |
-      event.target.className == "language-icon") {
+      event.target.parentNode.parentNode.className == "language-icon") {
     let description = `<div class='description'>
       <p class='go-back'> ${returnToGalleryLink} </p>
       <h3 class='projectTitle'> ${portfolioItemName} </h3>
@@ -282,36 +281,29 @@ const showDetails = (event) => {
         </div>
       </div>
     </div>`;
-
     document.querySelector("#portfolio-div").innerHTML = description;
     document.querySelector(".go-back").addEventListener('click', returnToGallery);
   }
   portfolioItemDetailsShown = true;
 }
-
 document.querySelector(".collection").addEventListener("click", showDetails);
 
 // Return to gallery after visiting project's details page
 const returnToGallery = (event) => {
   portfolioItemDetailsShown = false;
   rememberedIndex = null;
-
   let portfolioHeader = null;
   let portfolioInscription = null;
   if (language === "english") {
     portfolioHeader = "My works";
-    portfolioInscription = "There are also my projects on";
   } else if (language === "russian") {
     portfolioHeader = "Мои работы";
-    portfolioInscription = "Мои проекты есть также на";
   }
-
 
   let content = `<div class="gallery vertical-container">
     <h1> ${portfolioHeader} </h1>
       <div class="collection vertical-container">
       </div>
-      <p id="codepen"> ${portfolioInscription} <a href="https://codepen.io/enamarat"> Codepen </a></p>
   </div>`;
   document.querySelector("#portfolio-div").innerHTML = content;
   displayPortfolioImages();
