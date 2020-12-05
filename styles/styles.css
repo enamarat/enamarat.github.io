@@ -8,7 +8,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Indie Flower', Verdana, serif;
+  font-family: 'Indie Flower', arial, serif;
   font-size: 1rem;
   color: #FFFFFF;
   font-weight: bold;
@@ -67,23 +67,13 @@ h2 {
   text-decoration: underline;
 }
 
-h4 {
-  font-size: 80%;
-  color: red;
-  position: absolute;
-  top: 40%;
-}
-
-.bio p {
-  font-size: 1.8rem;
-}
-
 p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-right: 1rem;
     margin-left: 1rem;
 }
 
+/*** icon-credits***/
 .icons-credits p {
   color: #000;
   font-size: 1.2rem;
@@ -240,6 +230,7 @@ header {
   margin-top: 1rem;
   color: black;
   background-color: rgba(216, 222, 31, 0.5);
+  padding: 10px;
 }
 
 .link {
@@ -331,6 +322,48 @@ header {
   align-items: center;
 }
 
+/** stack **/
+#stack {
+  padding: 5px;
+  text-align: center;
+}
+
+#stack a {
+  color: yellow;
+  font-size: 1.8rem;
+}
+
+#stack p {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+#stack ul {
+  background-color: black;
+  display: none;
+  padding: 10px;
+}
+
+a#hover:hover {
+  cursor: pointer;
+}
+
+a#hover:hover ul {
+  display: block;
+}
+
+#stack ul li {
+  font-size: 1.8rem;
+  margin-right: 20px;
+  display: inline;
+  color: #FFF;
+}
+
+.highlight {
+  color: yellow;
+  font-weight: bold;
+}
+
 /*** badges ***/
 .badges {
   margin-top: 0.5rem;
@@ -364,6 +397,10 @@ header {
  }
 
 /** certificates **/
+#certificates {
+  margin-top: 5px;
+}
+
 .certificate {
   width: 150px;
   height: 100px;
