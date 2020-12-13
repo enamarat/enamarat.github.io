@@ -17,8 +17,8 @@ const portfolioItems = [
     imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_quiz2.jpg",
     linkToLiveDemo: "https://enamarat.github.io/stars-quiz",
     linkToGithub: "https://github.com/enamarat/stars-quiz",
-    russianDescription: "Простой опрос о звёздах в галактике Млечный Путь. Пользователь должен ответить на 5 вопросов. На каждый вопрос есть 4 варианта ответа, из которых только один является верным. В зависимости от общего числа набранных очков разные сообщения появляются на итоговом экране. Vanilla JavaScript и базовый CSS были использованы для данного проекта.",
-    description: "A simple quiz about stars in the Milky Way Galaxy. A user must answer 5 questions. There are 4 possible answers for every question with only one being true. Depending on total score different messages appear on the final screen. Vanilla JavaScript and basic CSS were used for this project."
+    russianDescription: "Опрос о звёздах в галактике Млечный Путь. Пользователь должен ответить на 5 вопросов. На каждый вопрос есть 4 варианта ответа, из которых только один является верным. В зависимости от общего числа набранных очков разные сообщения появляются на итоговом экране. Vanilla JavaScript и базовый CSS были использованы для данного проекта.",
+    description: "A quiz about stars in the Milky Way Galaxy. A user must answer 5 questions. There are 4 possible answers for every question with only one being true. Depending on total score different messages appear on the final screen. Vanilla JavaScript and basic CSS were used for this project."
   },
   {
     name: "Keyboard of victory",
@@ -26,8 +26,8 @@ const portfolioItems = [
     imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_victory3.jpg",
     linkToLiveDemo: "https://enamarat.github.io/keyboard-of-victory",
     linkToGithub: "https://github.com/enamarat/keyboard-of-victory",
-    russianDescription: "Простая, но весёлая маленькая игра. Внимание! Она предназначена для компьютера с клавиатурой. Игрок должен устранить слова, падающие с верхней части экрана, до того, как они достигнут красной линии. Это достигается путём их набора на клавиатуре без ошибок. Успешный набор текста в течение одной минуты обеспечивает победу. Проект сочетает анимации CSS и слушатели событий DOM JavaScript.",
-    description: "A simple but fun little game. Attention! It is meant to be played on a computer with a keyboard. Player must eliminate words falling from the top of the screen before they reach the red line. This is achieved by typing them on a keyboard without mistakes. Successful typing during one minute provides victory. The project combines CSS animations and JavaScript DOM event listeners."
+    russianDescription: "Весёлая маленькая игра. Внимание! Она предназначена для компьютера с клавиатурой. Игрок должен устранить слова, падающие с верхней части экрана, до того, как они достигнут красной линии. Это достигается путём их набора на клавиатуре без ошибок. Успешный набор текста в течение одной минуты обеспечивает победу. Проект сочетает анимации CSS и слушатели событий DOM JavaScript.",
+    description: "A fun little game. Attention! It is meant to be played on a computer with a keyboard. Player must eliminate words falling from the top of the screen before they reach the red line. This is achieved by typing them on a keyboard without mistakes. Successful typing during one minute provides victory. The project combines CSS animations and JavaScript DOM event listeners."
   },
   {
     name: "Let me remind you",
@@ -89,8 +89,8 @@ const portfolioItems = [
     imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_22.jpg",
     linkToLiveDemo: "https://in-the-spotlight.herokuapp.com/",
     linkToGithub: "https://github.com/enamarat/techdegree-project-12",
-    russianDescription: "Это полномастшабное веб-приложение, размещённое в облачном сервисе Heroku. Оно посылает запросы в сторонние API третьих лиц и снабжает ценами на рынке акций и курсами обмена иностранных валют. Оно состоит как из фронт-энд, так и бэк-энд частей, и написано исключительно на JavaScript. Библиотека React была использована для клиентской стороны приложения и фреймворк Express для серверной стороны. База данных была построена при помощи MongoDB.",
-    description: "This is a full-scale web application deployed on Heroku Cloud Service. It sends requests to third-party APIs and provides stock market prices and foreign currency exchange rates. It consists of both front-end and back-end and is written solely in JavaScript. React library was used for the client side of the application and Express framework for the server side. Database was built with MongoDB."
+    russianDescription: "Это полноe веб-приложение, размещённое в облачном сервисе Heroku. Оно посылает запросы в сторонние API третьих лиц и снабжает ценами на рынке акций и курсами обмена иностранных валют. Оно состоит как из фронт-энд, так и бэк-энд частей, и написано исключительно на JavaScript. Библиотека React была использована для клиентской стороны приложения и фреймворк Express для серверной стороны. База данных была построена при помощи MongoDB.",
+    description: "This is a complete web application deployed on Heroku Cloud Service. It sends requests to third-party APIs and provides stock market prices and foreign currency exchange rates. It consists of both front-end and back-end and is written solely in JavaScript. React library was used for the client side of the application and Express framework for the server side. Database was built with MongoDB."
   }
 ];
 
