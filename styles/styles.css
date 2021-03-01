@@ -245,7 +245,7 @@ header {
 }
 
 .link a:hover {
-  color: red;
+  color: #CC1837;
 }
 
 .go-back {
@@ -301,7 +301,7 @@ header {
   width: 90%;
   padding-top: 1.2rem;
   padding-bottom: 1rem;
-  background-color: rgba(26, 139, 237, 0.6);
+  background-color: rgba(26, 139, 237, 0.7);
 }
 
 .photo {
@@ -418,7 +418,7 @@ a#hover:hover ul {
 }
 
 .links a:hover {
-  color: red;
+  color: #CC1837;
 }
 /** show and hide bio**/
 .minus {
@@ -467,6 +467,7 @@ a#hover:hover ul {
   border: 2px solid black;
 }
 
+/*****************************/
 /****** Media queries *******/
 @media screen and (max-width: 480px) {
   /*** Typography ***/

@@ -132,7 +132,7 @@ const translateText = () => {
     }
     //"About Me" section
     document.querySelector("#bio-header").textContent = "Не история, а видение будущего";
-    document.querySelectorAll(".text p")[0].textContent = "Меня зовут Марат Еналиев, и я живу в Москве, Россия. Я начинающий веб-разработчик. Главным образом я концентрирую свои усилия на изучении JavaScript.";
+    document.querySelectorAll(".text p")[0].textContent = "Меня зовут Марат Еналиев, и я живу в Москве, Россия. Я начинающий веб-разработчик, который в первую очередь концентрирует свои усилия на изучении JavaScript.";
     document.querySelectorAll(".text p")[1].textContent = "Построение карьеры в веб-разработке - это мой личный, сознательный выбор. Эта работа предоставляет тебе безграничные возможности для творчества, и всегда есть что-то новое, чему ты можешь научиться.";
     document.querySelectorAll(".text p")[2].innerHTML="Я программист-самоучка без высшего или специального образования в области компьютерных наук. Я закончил онлайн-курсы на <a href='https://www.codecademy.com/' target='_blank'>Codecademy</a>, <a href='https://teamtreehouse.com/' target='_blank'>Treehouse</a> и <a href='https://www.freecodecamp.org/' target='_blank'>freeCodeCamp</a>.";
     document.querySelector("#stack p").textContent = "Мой технологический стек:";
@@ -155,8 +155,8 @@ const translateText = () => {
     }
     //"About Me" section
     document.querySelector("#bio-header").textContent = "Not history , but vision of the future";
-    document.querySelectorAll(".text p")[0].textContent = "My name is Marat Enaliev, and I live in Moscow, Russia. I am an aspiring web developer. Primarily I concetrate my efforts on studying JavaScript.";
-    document.querySelectorAll(".text p")[1].textContent = "Making career in web development is my personal conscious choice. This job provides you with limitless possibilities to express your creativity, and you always have something new to learn.";
+    document.querySelectorAll(".text p")[0].textContent = "My name is Marat Enaliev, and I live in Moscow, Russia. I am an aspiring web developer who primarily concentrates his efforts on studying JavaScript.";
+    document.querySelectorAll(".text p")[1].textContent = "Making a career in web development is my personal conscious choice. This job provides you with limitless possibilities to express your creativity, and you always have something new to learn.";
     document.querySelectorAll(".text p")[2].innerHTML="I'm a self-taught coder with no university or college degree in Computer Science. I finished online courses on <a href='https://www.codecademy.com/' target='_blank'>Codecademy</a>, <a href='https://teamtreehouse.com/' target='_blank'>Treehouse</a>, and <a href='https://www.freecodecamp.org/' target='_blank'>freeCodeCamp</a>.";
     document.querySelector("#stack p").textContent = "My technology stack:";
     document.querySelector(".photo h2").textContent = "Contacts";
