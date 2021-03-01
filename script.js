@@ -2,6 +2,7 @@ const portfolioImages = [
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_quiz3.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_victory.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_5.jpg",
+  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_10-2.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project1-1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project2-1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project3-1.jpg",
@@ -37,6 +38,15 @@ const portfolioItems = [
     linkToGithub: "https://github.com/enamarat/let-me-remind-you",
     russianDescription: " Приложение-менеджер задач, при помощи которого пользователь может создавать задачи, назначать им подзадачи, редактировать, удалять и помечать их как исполненные. Данный проект задействует использование местного хранилища браузера, так что задачи, созданные пользователем, сохраняются в его памяти и не исчезают после закрытия браузера.",
     description: "A to-do list application with the help of which a user can create tasks, assign subtasks to them, edit, delete, and mark them as completed. This project involves the usage of browser's local storage so that tasks created by user are stored in its memory and don't dissapear after the browser is closed."
+  },
+  {
+    name: "The basics of electricity",
+    russianName: "Основы электричества",
+    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_10-1.jpg",
+    linkToLiveDemo: "https://enamarat.github.io/circuit",
+    linkToGithub: "https://github.com/enamarat/circuit",
+    russianDescription: "Виртуальный обучающий ресурс, посвященный теме, которая всегда вызывала у меня интерес - электричеству! Информация разделена на разделы, чтобы облегчить ее использование и понимание. Каждый раздел содержит одну или несколько наглядных анимаций, иллюстрирующих идею, описанную в тексте раздела. Если вы ничего не знаете об электричестве, то это хорошее место для начала. Со временем я надеюсь расширить проект, добавив в него практические упражнения и дополнительные разделы. Итак, любители электричества, добро пожаловать!",
+    description: "A virtual learning resource dedicated to the topic that has always sparked my interest - electricity! The information is divided into sections to make it easy to consume and understand. Each section provides one or more visual animations illustrating the idea described in the section's text. If you know nothing about electricity, this is a good place to start. In time I hope to enlarge the project by adding practical exercises and more sections to it. So, electricity enthusiasts, you are welcome!"
   },
   {
     name: "Random Quote Generator",
