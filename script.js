@@ -45,8 +45,8 @@ const portfolioItems = [
     imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_10-1.jpg",
     linkToLiveDemo: "https://enamarat.github.io/circuit",
     linkToGithub: "https://github.com/enamarat/circuit",
-    russianDescription: "Виртуальный обучающий ресурс, посвященный теме, которая всегда вызывала у меня интерес - электричеству! Информация разделена на разделы, чтобы облегчить ее использование и понимание. Каждый раздел содержит одну или несколько наглядных анимаций, иллюстрирующих идею, описанную в тексте раздела. Если вы ничего не знаете об электричестве, то это хорошее место для начала. Со временем я надеюсь расширить проект, добавив в него практические упражнения и дополнительные разделы. Итак, любители электричества, добро пожаловать!",
-    description: "A virtual learning resource dedicated to the topic that has always sparked my interest - electricity! The information is divided into sections to make it easy to consume and understand. Each section provides one or more visual animations illustrating the idea described in the section's text. If you know nothing about electricity, this is a good place to start. In time I hope to enlarge the project by adding practical exercises and more sections to it. So, electricity enthusiasts, you are welcome!"
+    russianDescription: "Виртуальный обучающий ресурс, посвященный теме, которая всегда вызывала у меня интерес - электричеству! Информация поделена на разделы, чтобы облегчить ее использование и понимание. Каждый раздел содержит одну или несколько наглядных анимаций, иллюстрирующих идею, описанную в его тексте. Если вы ничего не знаете об электричестве, то это хорошее место для начала. Со временем я надеюсь расширить проект, добавив в него больше содержимого. Итак, любители электричества, добро пожаловать!",
+    description: "A virtual learning resource dedicated to the topic that has always sparked my interest - electricity! The information is divided into sections to make it easy to consume and understand. Each section provides one or more visual animations illustrating the idea described in its text. If you know nothing about electricity, this is a good place to start. In time I hope to enlarge the project by adding more content to it. So, electricity enthusiasts, you are welcome!"
   },
   {
     name: "Random Quote Generator",
@@ -132,7 +132,7 @@ const translateText = () => {
     }
     //"About Me" section
     document.querySelector("#bio-header").textContent = "Не история, а видение будущего";
-    document.querySelectorAll(".text p")[0].textContent = "Меня зовут Марат Еналиев, и я живу в Москве, Россия. Я начинающий веб-разработчик, который в первую очередь концентрирует свои усилия на изучении JavaScript.";
+    document.querySelectorAll(".text p")[0].textContent = "Меня зовут Марат, и я живу в России. Я начинающий веб-разработчик, который в первую очередь концентрирует свои усилия на изучении JavaScript.";
     document.querySelectorAll(".text p")[1].textContent = "Построение карьеры в веб-разработке - это мой личный, сознательный выбор. Эта работа предоставляет тебе безграничные возможности для творчества, и всегда есть что-то новое, чему ты можешь научиться.";
     document.querySelectorAll(".text p")[2].innerHTML="Я программист-самоучка без высшего или специального образования в области компьютерных наук. Я закончил онлайн-курсы на <a href='https://www.codecademy.com/' target='_blank'>Codecademy</a>, <a href='https://teamtreehouse.com/' target='_blank'>Treehouse</a> и <a href='https://www.freecodecamp.org/' target='_blank'>freeCodeCamp</a>.";
     document.querySelector("#stack p").textContent = "Мой технологический стек:";
@@ -155,7 +155,7 @@ const translateText = () => {
     }
     //"About Me" section
     document.querySelector("#bio-header").textContent = "Not history , but vision of the future";
-    document.querySelectorAll(".text p")[0].textContent = "My name is Marat Enaliev, and I live in Moscow, Russia. I am an aspiring web developer who primarily concentrates his efforts on studying JavaScript.";
+    document.querySelectorAll(".text p")[0].textContent = "My name is Marat, and I live in Russia. I am an aspiring web developer who primarily concentrates his efforts on studying JavaScript.";
     document.querySelectorAll(".text p")[1].textContent = "Making a career in web development is my personal conscious choice. This job provides you with limitless possibilities to express your creativity, and you always have something new to learn.";
     document.querySelectorAll(".text p")[2].innerHTML="I'm a self-taught coder with no university or college degree in Computer Science. I finished online courses on <a href='https://www.codecademy.com/' target='_blank'>Codecademy</a>, <a href='https://teamtreehouse.com/' target='_blank'>Treehouse</a>, and <a href='https://www.freecodecamp.org/' target='_blank'>freeCodeCamp</a>.";
     document.querySelector("#stack p").textContent = "My technology stack:";
