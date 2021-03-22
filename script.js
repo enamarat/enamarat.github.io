@@ -197,7 +197,6 @@ const changeSection = (event) => {
   for (let i = 0; i < sections.length; i++) {
     sections[i].style.display = "none";
   }
-
   let chosenLabel = event.target.textContent.toLowerCase().trim();
   if (chosenLabel === "portfolio") {
     if (portfolioItemDetailsShown === false) {

@@ -107,6 +107,15 @@ header {
   cursor: pointer;
 }
 
+/*** Footer ***/
+  footer {
+    margin-top: 2rem;
+  }
+
+  #icon-credits:hover {
+    color: yellow;
+  }
+
 /************* Main *************/
 #main-div:before {
   content: "";
@@ -167,6 +176,7 @@ header {
 .collection {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -181,6 +191,11 @@ header {
   width: 250px;
   opacity: 0.7;
   margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.portfolio-item:last-child  {
+  margin-right: 0;
 }
 
 .image {
@@ -190,10 +205,6 @@ header {
 
 .portfolio-item .image img {
   width: 100%;
-}
-
-.portfolio-item:last-child {
-  margin-bottom: 2rem;
 }
 
 .portfolio-item:hover {
@@ -310,8 +321,11 @@ header {
   margin-bottom: 0.5rem;
 }
 
-#photo {
-  max-width: 90%;
+#image {
+  background-image: url('https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/IMG_0192-min.JPG');
+  background-size: cover;
+  width: 90%;
+  padding-top: 62.5%;
   margin-right: 10px;
   margin-left: 20px;
   border: 5px solid #FFF;
@@ -536,24 +550,10 @@ a#hover:hover ul {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 900px) {
   /**** Portfolio ****/
   #portfolio-div {
     height: 100%;
-  }
-
-  .collection {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .portfolio-item {
-    margin-right: 0.5rem;
-  }
-
-  .portfolio-item:last-child {
-    margin-right: 0;
-    margin-bottom: 0;
   }
 
   /** Project details **/
