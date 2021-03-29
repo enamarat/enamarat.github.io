@@ -495,7 +495,7 @@ a#hover:hover ul {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 899px) {
   /*** Typography ***/
   html, body {
     font-size: 0.8rem;
@@ -519,7 +519,7 @@ a#hover:hover ul {
 
   /*** Portfolio ***/
   .portfolio-item  {
-    width: 50%;
+      width: 50%;
   }
 
   /* Project details */
@@ -552,10 +552,6 @@ a#hover:hover ul {
 
 @media screen and (min-width: 900px) {
   /**** Portfolio ****/
-  #portfolio-div {
-    height: 100%;
-  }
-
   /** Project details **/
   .details-image {
     width: 35%;
