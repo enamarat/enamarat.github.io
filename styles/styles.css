@@ -518,10 +518,6 @@ a#hover:hover ul {
   }
 
   /*** Portfolio ***/
-  .portfolio-item  {
-      width: 50%;
-  }
-
   /* Project details */
   .details {
     flex-direction: column-reverse;
