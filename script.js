@@ -3,6 +3,7 @@ const portfolioImages = [
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_victory.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_5.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_10-2.jpg",
+  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_1connect-four-portfolio-2.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project1-1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project2-1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project3-1.jpg",
@@ -47,6 +48,15 @@ const portfolioItems = [
     linkToGithub: "https://github.com/enamarat/circuit",
     russianDescription: "Виртуальный обучающий ресурс, посвященный теме, которая всегда вызывала у меня интерес - электричеству! Информация поделена на разделы, чтобы облегчить ее использование и понимание. Каждый раздел содержит одну или несколько наглядных анимаций, иллюстрирующих идею, описанную в его тексте. Если вы ничего не знаете об электричестве, то это хорошее место для начала. Со временем я надеюсь расширить проект, добавив в него больше содержимого. Итак, любители электричества, добро пожаловать!",
     description: "A virtual learning resource dedicated to the topic that has always sparked my interest - electricity! The information is divided into sections to make it easy to consume and understand. Each section provides one or more visual animations illustrating the idea described in its text. If you know nothing about electricity, this is a good place to start. In time I hope to enlarge the project by adding more content to it. So, electricity enthusiasts, you are welcome!"
+  },
+  {
+    name: "Connect Four",
+    russianName: "Соедини четыре",
+    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_2connect-four-portfolio-1.jpg",
+    linkToLiveDemo: "https://enamarat.github.io/Connect-Four",
+    linkToGithub: "https://github.com/enamarat/Connect-Four",
+    russianDescription:"Браузерная игра для двух игроков, цель которой - соединить четыре круга по горизонтали или вертикали, бросив их внутрь специальной доски до того, как это сделает противник. В этом увлекательном проекте я исследовал базовую интерактивную SVG-анимацию, управляемую слушателями событий JavaScript.",
+    description: "A two players browser game where the goal is to connect four circles either horizontally or vertically by dropping them inside the special board before your opponent does. I explored basic interactive SVG animations controlled by JavaScript event listeners in this fascinating project."
   },
   {
     name: "Random Quote Generator",
