@@ -4,6 +4,7 @@ const portfolioImages = [
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_5.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_10-2.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_1connect-four-portfolio-2.jpg",
+  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_tic1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project1-1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project2-1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project3-1.jpg",
@@ -61,11 +62,11 @@ const portfolioItems = [
   {
     name: "Tic-tac-toe",
     russianName: "Крестики-нолики",
-    imageSource: "",
+    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_tic2.jpg",
     linkToLiveDemo: "https://enamarat.github.io/tic-tac-toe",
     linkToGithub: "https://github.com/enamarat/tic-tac-toe",
-    russianDescription: "",
-    description: ""
+    russianDescription: "Классическая игра в крестики-нолики. Два игрока соревнуются за победу, пытаясь заполнить своими фигурами строку, столбец или диагональ до того, как это сделает соперник. У каждого игрока свой ход, и он заканчивает его, щелкая курсором мыши по незанятой ячейке сетки. Этот проект был хорошей практикой для оттачивания моих навыков программирования на JavaScript и функционального программирования.",
+    description: "A classic game of tic-tac-toe. Two players compete for victory, trying to fill either a row, a column, or a diagonal with their figures before the rival does. Each player has their turn and finishes it by clicking a mouse cursor on an unoccupied cell in the grid. This project was good practice for sharpening my coding skills in JavaScript and functional programming."
   },
   {
     name: "Random Quote Generator",
