@@ -59,6 +59,15 @@ const portfolioItems = [
     description: "A two players browser game where the goal is to connect four circles either horizontally or vertically by dropping them inside the special board before your opponent does. I explored basic interactive SVG animations controlled by JavaScript event listeners in this fascinating project."
   },
   {
+    name: "Tic-tac-toe",
+    russianName: "Крестики-нолики",
+    imageSource: "",
+    linkToLiveDemo: "https://enamarat.github.io/tic-tac-toe",
+    linkToGithub: "https://github.com/enamarat/tic-tac-toe",
+    russianDescription: "",
+    description: ""
+  },
+  {
     name: "Random Quote Generator",
     russianName: "Генератор случайных цитат",
     imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project1-2.jpg",
