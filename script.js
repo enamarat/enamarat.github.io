@@ -1,73 +1,19 @@
 const portfolioImages = [
-  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_quiz3.jpg",
-  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_victory.jpg",
-  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_5.jpg",
-  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_10-2.jpg",
-  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_1connect-four-portfolio-2.jpg",
-  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_tic1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project1-1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project2-1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project3-1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project4-1.jpg",
   "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_project5-1.jpg",
-  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_21.jpg"
+  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_21.jpg",
+  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_5.jpg",
+  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_quiz3.jpg",
+  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_victory.jpg",
+  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_10-2.jpg",
+  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_1connect-four-portfolio-2.jpg",
+  "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_tic1.jpg"
 ];
 
 const portfolioItems = [
-  {
-    name: "Star quiz",
-    russianName: "Звёздная викторина",
-    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_quiz2.jpg",
-    linkToLiveDemo: "https://enamarat.github.io/stars-quiz",
-    linkToGithub: "https://github.com/enamarat/stars-quiz",
-    russianDescription: "Опрос о звёздах в галактике Млечный Путь. Пользователь должен ответить на 5 вопросов. На каждый вопрос есть 4 варианта ответа, из которых только один является верным. В зависимости от общего числа набранных очков разные сообщения появляются на итоговом экране. Vanilla JavaScript и базовый CSS были использованы для данного проекта.",
-    description: "A quiz about stars in the Milky Way Galaxy. A user must answer 5 questions. There are 4 possible answers for every question with only one being true. Depending on total score different messages appear on the final screen. Vanilla JavaScript and basic CSS were used for this project."
-  },
-  {
-    name: "Keyboard of victory",
-    russianName: "Клавиатура победы",
-    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_victory3.jpg",
-    linkToLiveDemo: "https://enamarat.github.io/keyboard-of-victory",
-    linkToGithub: "https://github.com/enamarat/keyboard-of-victory",
-    russianDescription: "Весёлая маленькая игра. Внимание! Она предназначена для компьютера с клавиатурой. Игрок должен устранить слова, падающие с верхней части экрана, до того, как они достигнут красной линии. Это достигается путём их набора на клавиатуре без ошибок. Успешный набор текста в течение одной минуты обеспечивает победу. Проект сочетает анимации CSS и слушатели событий DOM JavaScript.",
-    description: "A fun little game. Attention! It is meant to be played on a computer with a keyboard. Player must eliminate words falling from the top of the screen before they reach the red line. This is achieved by typing them on a keyboard without mistakes. Successful typing during one minute provides victory. The project combines CSS animations and JavaScript DOM event listeners."
-  },
-  {
-    name: "Let me remind you",
-    russianName: "Позвольте напомнить",
-    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_5.jpg",
-    linkToLiveDemo: "https://enamarat.github.io/let-me-remind-you",
-    linkToGithub: "https://github.com/enamarat/let-me-remind-you",
-    russianDescription: " Приложение-менеджер задач, при помощи которого пользователь может создавать задачи, назначать им подзадачи, редактировать, удалять и помечать их как исполненные. Данный проект задействует использование местного хранилища браузера, так что задачи, созданные пользователем, сохраняются в его памяти и не исчезают после закрытия браузера.",
-    description: "A to-do list application with the help of which a user can create tasks, assign subtasks to them, edit, delete, and mark them as completed. This project involves the usage of browser's local storage so that tasks created by user are stored in its memory and don't dissapear after the browser is closed."
-  },
-  {
-    name: "The basics of electricity",
-    russianName: "Основы электричества",
-    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_10-1.jpg",
-    linkToLiveDemo: "https://enamarat.github.io/circuit",
-    linkToGithub: "https://github.com/enamarat/circuit",
-    russianDescription: "Виртуальный обучающий ресурс, посвященный теме, которая всегда вызывала у меня интерес - электричеству! Информация поделена на разделы, чтобы облегчить ее использование и понимание. Каждый раздел содержит одну или несколько наглядных анимаций, иллюстрирующих идею, описанную в его тексте. Если вы ничего не знаете об электричестве, то это хорошее место для начала. Со временем я надеюсь расширить проект, добавив в него больше содержимого. Итак, любители электричества, добро пожаловать!",
-    description: "A virtual learning resource dedicated to the topic that has always sparked my interest - electricity! The information is divided into sections to make it easy to consume and understand. Each section provides one or more visual animations illustrating the idea described in its text. If you know nothing about electricity, this is a good place to start. In time I hope to enlarge the project by adding more content to it. So, electricity enthusiasts, you are welcome!"
-  },
-  {
-    name: "Connect Four",
-    russianName: "Соедини четыре",
-    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_2connect-four-portfolio-1.jpg",
-    linkToLiveDemo: "https://enamarat.github.io/Connect-Four",
-    linkToGithub: "https://github.com/enamarat/Connect-Four",
-    russianDescription:"Браузерная игра для двух игроков, цель которой - соединить четыре круга по горизонтали или вертикали, бросив их внутрь специальной доски до того, как это сделает противник. В этом увлекательном проекте я исследовал базовую интерактивную SVG-анимацию, управляемую слушателями событий JavaScript.",
-    description: "A two players browser game where the goal is to connect four circles either horizontally or vertically by dropping them inside the special board before your opponent does. I explored basic interactive SVG animations controlled by JavaScript event listeners in this fascinating project."
-  },
-  {
-    name: "Tic-tac-toe",
-    russianName: "Крестики-нолики",
-    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_tic2.jpg",
-    linkToLiveDemo: "https://enamarat.github.io/tic-tac-toe",
-    linkToGithub: "https://github.com/enamarat/tic-tac-toe",
-    russianDescription: "Классическая игра в крестики-нолики. Два игрока соревнуются, пытаясь заполнить своими фигурами строку, столбец или диагональ до того, как это сделает соперник. У каждого игрока свой ход, и он заканчивает его, щелкая курсором мыши по незанятой ячейке сетки. Этот проект был хорошей практикой для оттачивания моих навыков написания кода на JavaScript и функционального программирования.",
-    description: "A classic game of tic-tac-toe. Two players compete, trying to fill either a row, a column, or a diagonal with their figures before the rival does. Each player has their turn and finishes it by clicking a mouse cursor on an unoccupied cell in the grid. This project was good practice for sharpening my coding skills in JavaScript and functional programming."
-  },
   {
     name: "Random Quote Generator",
     russianName: "Генератор случайных цитат",
@@ -121,6 +67,60 @@ const portfolioItems = [
     linkToGithub: "https://github.com/enamarat/techdegree-project-12",
     russianDescription: "Это полноe веб-приложение, размещённое в облачном сервисе Heroku. Оно посылает запросы в сторонние API третьих лиц и снабжает ценами на рынке акций и курсами обмена иностранных валют. Оно состоит как из фронт-энд, так и бэк-энд частей, и написано исключительно на JavaScript. Библиотека React была использована для клиентской стороны приложения и фреймворк Express для серверной стороны. База данных была построена при помощи MongoDB.",
     description: "This is a complete web application deployed on Heroku Cloud Service. It sends requests to third-party APIs and provides stock market prices and foreign currency exchange rates. It consists of both front-end and back-end and is written solely in JavaScript. React library was used for the client side of the application and Express framework for the server side. Database was built with MongoDB."
+  },
+  {
+    name: "Let me remind you",
+    russianName: "Позвольте напомнить",
+    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_5.jpg",
+    linkToLiveDemo: "https://enamarat.github.io/let-me-remind-you",
+    linkToGithub: "https://github.com/enamarat/let-me-remind-you",
+    russianDescription: " Приложение-менеджер задач, при помощи которого пользователь может создавать задачи, назначать им подзадачи, редактировать, удалять и помечать их как исполненные. Данный проект задействует использование местного хранилища браузера, так что задачи, созданные пользователем, сохраняются в его памяти и не исчезают после закрытия браузера.",
+    description: "A to-do list application with the help of which a user can create tasks, assign subtasks to them, edit, delete, and mark them as completed. This project involves the usage of browser's local storage so that tasks created by user are stored in its memory and don't dissapear after the browser is closed."
+  },
+  {
+    name: "Star quiz",
+    russianName: "Звёздная викторина",
+    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_quiz2.jpg",
+    linkToLiveDemo: "https://enamarat.github.io/stars-quiz",
+    linkToGithub: "https://github.com/enamarat/stars-quiz",
+    russianDescription: "Опрос о звёздах в галактике Млечный Путь. Пользователь должен ответить на 5 вопросов. На каждый вопрос есть 4 варианта ответа, из которых только один является верным. В зависимости от общего числа набранных очков разные сообщения появляются на итоговом экране. Vanilla JavaScript и базовый CSS были использованы для данного проекта.",
+    description: "A quiz about stars in the Milky Way Galaxy. A user must answer 5 questions. There are 4 possible answers for every question with only one being true. Depending on total score different messages appear on the final screen. Vanilla JavaScript and basic CSS were used for this project."
+  },
+  {
+    name: "Keyboard of victory",
+    russianName: "Клавиатура победы",
+    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_victory3.jpg",
+    linkToLiveDemo: "https://enamarat.github.io/keyboard-of-victory",
+    linkToGithub: "https://github.com/enamarat/keyboard-of-victory",
+    russianDescription: "Весёлая маленькая игра. Внимание! Она предназначена для компьютера с клавиатурой. Игрок должен устранить слова, падающие с верхней части экрана, до того, как они достигнут красной линии. Это достигается путём их набора на клавиатуре без ошибок. Успешный набор текста в течение одной минуты обеспечивает победу. Проект сочетает анимации CSS и слушатели событий DOM JavaScript.",
+    description: "A fun little game. Attention! It is meant to be played on a computer with a keyboard. Player must eliminate words falling from the top of the screen before they reach the red line. This is achieved by typing them on a keyboard without mistakes. Successful typing during one minute provides victory. The project combines CSS animations and JavaScript DOM event listeners."
+  },
+  {
+    name: "The basics of electricity",
+    russianName: "Основы электричества",
+    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_10-1.jpg",
+    linkToLiveDemo: "https://enamarat.github.io/circuit",
+    linkToGithub: "https://github.com/enamarat/circuit",
+    russianDescription: "Виртуальный обучающий ресурс, посвященный теме, которая всегда вызывала у меня интерес - электричеству! Информация поделена на разделы, чтобы облегчить ее использование и понимание. Каждый раздел содержит одну или несколько наглядных анимаций, иллюстрирующих идею, описанную в его тексте. Если вы ничего не знаете об электричестве, то это хорошее место для начала. Со временем я надеюсь расширить проект, добавив в него больше содержимого. Итак, любители электричества, добро пожаловать!",
+    description: "A virtual learning resource dedicated to the topic that has always sparked my interest - electricity! The information is divided into sections to make it easy to consume and understand. Each section provides one or more visual animations illustrating the idea described in its text. If you know nothing about electricity, this is a good place to start. In time I hope to enlarge the project by adding more content to it. So, electricity enthusiasts, you are welcome!"
+  },
+  {
+    name: "Connect Four",
+    russianName: "Соедини четыре",
+    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_2connect-four-portfolio-1.jpg",
+    linkToLiveDemo: "https://enamarat.github.io/Connect-Four",
+    linkToGithub: "https://github.com/enamarat/Connect-Four",
+    russianDescription:"Браузерная игра для двух игроков, цель которой - соединить четыре круга по горизонтали или вертикали, бросив их внутрь специальной доски до того, как это сделает противник. В этом увлекательном проекте я исследовал базовую интерактивную SVG-анимацию, управляемую слушателями событий JavaScript.",
+    description: "A two players browser game where the goal is to connect four circles either horizontally or vertically by dropping them inside the special board before your opponent does. I explored basic interactive SVG animations controlled by JavaScript event listeners in this fascinating project."
+  },
+  {
+    name: "Tic-tac-toe",
+    russianName: "Крестики-нолики",
+    imageSource: "https://raw.githubusercontent.com/enamarat/enamarat.github.io/master/public/rsz_tic2.jpg",
+    linkToLiveDemo: "https://enamarat.github.io/tic-tac-toe",
+    linkToGithub: "https://github.com/enamarat/tic-tac-toe",
+    russianDescription: "Классическая игра в крестики-нолики. Два игрока соревнуются, пытаясь заполнить своими фигурами строку, столбец или диагональ до того, как это сделает соперник. У каждого игрока свой ход, и он заканчивает его, щелкая курсором мыши по незанятой ячейке сетки. Этот проект был хорошей практикой для оттачивания моих навыков написания кода на JavaScript и функционального программирования.",
+    description: "A classic game of tic-tac-toe. Two players compete, trying to fill either a row, a column, or a diagonal with their figures before the rival does. Each player has their turn and finishes it by clicking a mouse cursor on an unoccupied cell in the grid. This project was good practice for sharpening my coding skills in JavaScript and functional programming."
   }
 ];
 
