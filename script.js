@@ -306,7 +306,7 @@ const showDetails = (event) => {
       <div class='details'>
         <img class='details-image' src='${portfolioItems[index].imageSource}'/>
         <div class='information'>
-          <p class='link'> <a href='${portfolioItems[index].linkToLiveDemo}'> ${demoLink} </a> </p>
+          <p class='link'> <a href='${portfolioItems[index].linkToLiveDemo}' target='_blank'> ${demoLink} </a> </p>
           <p class='link'> <a href='${portfolioItems[index].linkToGithub}'> ${githubLink}  </a> </p>
           <p class='intended'> ${portfolioItemDescription} </p>
         </div>
