@@ -194,10 +194,6 @@ header {
   margin-right: 0.5rem;
 }
 
-.portfolio-item:last-child  {
-  margin-right: 0;
-}
-
 .image {
   width: 100%;
   overflow: hidden;
