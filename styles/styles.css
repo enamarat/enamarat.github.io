@@ -3,7 +3,8 @@
   font-size: 1.5em;
 }
 
-main, section {
+main,
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,6 +14,7 @@ main, section {
   margin-right: 1em;
 }
 
+/** Typography **/
 h1 {
   font-size: 2em;
   font-weight: bold;
@@ -26,8 +28,25 @@ h2 {
   text-decoration: underline;
 }
 
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
 p {
   text-align: center;
+}
+
+.text_description {
+  font-size: 0.75em;
+}
+
+.link_description {
+  font-size: 0.75em;
+  margin-top: 0.2em;
+  text-decoration: none;
+  color: red;
 }
 
 /** Portfolio **/
@@ -38,16 +57,32 @@ p {
   align-items: center;
 }
 
-.portfolio-item {
-  width: 200px;
+.portfolio-image {
+  width: 8em;
   margin: 0.2em;
   border: 4px solid black;
   position: relative;
 }
 
-.portfolio-item:hover{
-  transform: scale(1.08);
-  cursor: pointer;
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-item:hover > .description {
+  display: block;
+}
+
+.description {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: white;
+  border: 4px solid black;
+  text-align: center;
+  width: 10em;
+  padding: 0.5em;
 }
 
 /** Skills **/
