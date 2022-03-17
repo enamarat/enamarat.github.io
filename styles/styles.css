@@ -49,6 +49,27 @@ p {
   color: red;
 }
 
+/** Welcome **/
+#introduction {
+  margin-top: 0.5em;
+}
+
+#tree {
+  width: 3em;
+}
+
+#branch {
+  width: 9em;
+  position: absolute;
+  left: 0;
+}
+
+#second_branch {
+  width: 9em;
+  position: absolute;
+  right: 0;
+}
+
 /** Portfolio **/
 #gallery_portfolio {
   display: flex;
@@ -155,4 +176,25 @@ footer {
   margin-bottom: 1em;
   font-family: monospace, sans-serif;
   font-size: 1.2em;
+}
+
+/*** queries **/
+@media screen and (max-width: 680px) {
+  #branch {
+    width: 6em;
+  }
+
+  #second_branch {
+    width: 6em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #branch {
+    width: 3.5em;
+  }
+
+  #second_branch {
+    width: 3.5em;
+  }
 }
