@@ -165,18 +165,18 @@ li {
   color: black;
 }
 
+#icon_credits {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
 #leetcode:hover,
 #codewars:hover,
 #github:hover,
 #codepen:hover,
 #icon_credits:hover {
   color: green;
-}
-
-#icon_credits {
-  text-decoration: none;
-  color: blue;
-  font-weight: bold;
 }
 
 /** Footer **/
