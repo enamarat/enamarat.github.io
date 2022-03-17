@@ -165,6 +165,14 @@ li {
   color: black;
 }
 
+#leetcode:hover,
+#codewars:hover,
+#github:hover,
+#codepen:hover,
+#icon_credits:hover {
+  color: green;
+}
+
 #icon_credits {
   text-decoration: none;
   color: blue;
@@ -179,12 +187,12 @@ footer {
 }
 
 /*** queries **/
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
   #branch {
-    display: none;
+    width: 100px;
   }
 
   #second_branch {
-    display: none;
+    width: 100px;
   }
 }
