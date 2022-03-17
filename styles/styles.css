@@ -55,17 +55,17 @@ p {
 }
 
 #tree {
-  width: 3em;
+  width: 80px;
 }
 
 #branch {
-  width: 9em;
+  width: 200px;
   position: absolute;
   left: 0;
 }
 
 #second_branch {
-  width: 9em;
+  width: 200px;
   position: absolute;
   right: 0;
 }
@@ -179,22 +179,12 @@ footer {
 }
 
 /*** queries **/
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 599px) {
   #branch {
-    width: 6em;
+    display: none;
   }
 
   #second_branch {
-    width: 6em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #branch {
-    width: 3.5em;
-  }
-
-  #second_branch {
-    width: 3.5em;
+    display: none;
   }
 }
