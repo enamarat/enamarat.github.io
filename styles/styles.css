@@ -106,6 +106,10 @@ p {
   padding: 0.5em;
 }
 
+.link_description:hover {
+  color: blue;
+}
+
 /** Skills **/
 ul {
   text-align: center;
@@ -167,16 +171,12 @@ li {
 
 #icon_credits {
   text-decoration: none;
-  color: blue;
+  color: red;
   font-weight: bold;
 }
 
-#leetcode:hover,
-#codewars:hover,
-#github:hover,
-#codepen:hover,
 #icon_credits:hover {
-  color: green;
+  color: blue;
 }
 
 /** Footer **/
