@@ -190,18 +190,6 @@ p {
   width: 80px;
 }
 
-#branch {
-  width: 200px;
-  position: absolute;
-  left: 0;
-}
-
-#second_branch {
-  width: 200px;
-  position: absolute;
-  right: 0;
-}
-
 /** Portfolio **/
 #gallery_portfolio {
   display: flex;
@@ -326,13 +314,3 @@ footer {
   font-size: 1.2em;
 }
 
-/*** queries **/
-@media screen and (max-width: 600px) {
-  #branch {
-    width: 100px;
-  }
-
-  #second_branch {
-    width: 100px;
-  }
-}
